@@ -1,0 +1,50 @@
+body.start-pg {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+    color: var(--color-font);
+    font-family: "Inter", sans-serif;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.start-pg .title-container {
+    padding-top: 8rem;
+}
+
+.start-pg .title {
+    font-size: var(--font-title-size);
+    font-weight: 700;
+}
+
+.start-pg .subtitle {
+    font-size: var(--font-subtitle-size);
+    margin-top: .5rem;
+    opacity: 0.9;
+}
+
+.language-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lang-container {
+    position: relative;
+    display: inline-block;
+}
+
+.start-button-container {
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+

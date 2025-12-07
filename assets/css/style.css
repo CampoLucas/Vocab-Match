@@ -1,0 +1,26 @@
+@import url(./layout.css);
+@import url(./components.css);
+
+:root {
+    --color-bg: rgb(0, 157, 255);
+    --color-font: rgb(255,255,255);
+    --color-accent: rgb(255,255,255);
+
+    --font-title-size: 5rem;
+    --font-subtitle-size: 1.3rem;
+
+    --transition-speed: 0.3s;
+
+    --filter-white: invert(100%) sepia(0%) saturate(7472%) hue-rotate(105deg) brightness(99%) contrast(90%);
+    --filter-gray: invert(55%) sepia(0%) saturate(67%) hue-rotate(168deg) brightness(93%) contrast(84%);
+    --filter-black: invert(0%) sepia(90%) saturate(7460%) hue-rotate(346deg) brightness(89%) contrast(111%);
+    --filter-red: invert(33%) sepia(96%) saturate(5773%) hue-rotate(356deg) brightness(86%) contrast(141%);
+    --filter-red-light: invert(73%) sepia(56%) saturate(1741%) hue-rotate(306deg) brightness(95%) contrast(138%);
+    --filter-red-dark: invert(10%) sepia(48%) saturate(5880%) hue-rotate(352deg) brightness(101%) contrast(117%);
+    --filter-blue: invert(31%) sepia(65%) saturate(2903%) hue-rotate(199deg) brightness(101%) contrast(109%);
+    --filter-blue-light: invert(81%) sepia(38%) saturate(1436%) hue-rotate(171deg) brightness(103%) contrast(99%);
+    --filter-blue-dark: invert(6%) sepia(80%) saturate(6397%) hue-rotate(214deg) brightness(118%) contrast(143%);
+    --filter-green: invert(76%) sepia(65%) saturate(3602%) hue-rotate(80deg) brightness(106%) contrast(117%);
+    --filter-green-light: invert(75%) sepia(67%) saturate(344%) hue-rotate(66deg) brightness(104%) contrast(99%);
+    --filter-green-dark: invert(30%) sepia(84%) saturate(1250%) hue-rotate(95deg) brightness(92%) contrast(105%);
+}

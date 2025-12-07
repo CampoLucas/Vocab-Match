@@ -1,0 +1,61 @@
+<!-- 
+Page 1 Scope:
+- One page layout
+- footer with contact
+- Background: buldings at the bottom; japanese, spanish and english words decorating the sides; title at the top; explanation at the center
+- Language selector usng jsons
+- Dificulty selector using json
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchPop - Practice Languages</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body class="start-pg">
+    <header>
+        <div class="title-container">
+            <h1 class="title">Match Pop!</h1>
+            <h2 class="subtitle" id="subtitle">Select your language</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="language-selector">
+            <!-- Left language box -->
+            <div class="lang-container">
+                <div class="lang-box" id="from-lang">
+                    <img class="icon flag disabled" id="from-flag" src="" alt="" />
+                    <span class="lang-name" id="from-name">Select language</span>
+                </div>
+                <div class="dropdown-list disabled" id="dropdown-from"></div>
+            </div>
+
+            <!-- Arrow icon -->
+            <div class="icon arrow-3"></div>
+
+            <!-- Left language box -->
+            <div class="lang-container">
+                <div class="lang-box" id="to-lang">
+                    <img class="icon flag disabled" id="to-flag" src="" alt="" />
+                    <span class="lang-name" id="to-name">Select language</span>
+                </div>
+                <div class="dropdown-list disabled" id="dropdown-to"></div>
+            </div>
+        </section>
+        
+        <section class="start-button-container">
+            <a class="start-button"><span>►</span>Start</a>
+        </section>
+        
+
+    </main>
+
+    
+    <script src="./assets/js/data/languages.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
