@@ -56,6 +56,10 @@
     display: none;
 }
 
+.dropdown-list.drop-up {
+    transform: translateY(calc(-100% - 0.5rem));
+}
+
 .dropdown-item {
     height: var(--dropdown-item-height);
     padding: 0.7rem 1rem;
@@ -170,4 +174,8 @@
     .dropdown-item {
         align-items: center;
     }
+}
+
+@media only screen and (orientation: landscape) and (max-width:1000px) {
+
 }

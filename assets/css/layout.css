@@ -1,20 +1,20 @@
-body.start-pg {
-    margin: 0;
-    padding: 0;
+.start-pg {
+    height: 100svh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
     background: var(--color-bg);
     color: var(--color-font);
     font-family: "Inter", sans-serif;
-    height: 100svh;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    text-align: center;
-    padding: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .start-pg .title-container {
+    text-align: center;
+    padding: 2rem;
     padding-top: 8rem;
 }
 
@@ -46,5 +46,17 @@ header {
     height: 5rem;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (orientation: portrait) and (max-width:600px) {
+    .start-pg .title-container {
+        padding-top: 4rem;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width:1000px) {
+    .start-pg .title-container {
+        padding-top: 3rem;
+    }
 }
 

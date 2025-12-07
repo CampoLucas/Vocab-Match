@@ -78,7 +78,21 @@ toBox.addEventListener("click", () => toggle(dropdownTo));
 function toggle(drop) {
     dropdownFrom.classList.add("disabled");
     dropdownTo.classList.add("disabled");
+
     drop.classList.remove("disabled");
+
+    // Remove previous drop-up state
+    drop.classList.remove("drop-up");
+
+    // Measure dropdown
+    const rect = drop.getBoundingClientRect();
+    const spaceBelow = window.innerHeight - rect.top;
+    const dropdownHeight = drop.scrollHeight;
+
+    // If dropdown would overflow, open upward
+    if (dropdownHeight > spaceBelow) {
+        drop.classList.add("drop-up");
+    }
 }
 
 // Rotate subtitle language every 10s
