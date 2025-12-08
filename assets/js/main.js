@@ -19,7 +19,7 @@ const toName = document.getElementById("to-name");
 const subtitle = document.getElementById("subtitle");
 
 // Load JSON
-fetch("/assets/data/app-data2.json")
+fetch("./assets/data/app-data2.json")
     .then(response => {
         if (!response.ok){
             throw new Error(`HTTP error! Status: ${response.status}`);
