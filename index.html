@@ -21,38 +21,41 @@ Page 1 Scope:
     </header>
 
     <main>
-        <div class="start-pg">
-            <div class="title-container">
+        <div class="start-pg" id="start-page">
+            <div class="upper-container">
                 <h1 class="title">Match Pop!</h1>
                 <h2 class="subtitle" id="subtitle">Select your language</h2>
             </div>
 
-            <section class="language-selector">
-                <!-- Left language box -->
-                <div class="lang-container">
-                    <div class="lang-box" id="from-lang">
-                        <img class="icon flag disabled" id="from-flag" src="" alt="" />
-                        <span class="lang-name" id="from-name">Select language</span>
+
+            <div class="bottom-container">
+                <div class="language-selector">
+                    <!-- Left language box -->
+                    <div class="lang-container">
+                        <div class="lang-box" id="from-lang">
+                            <img class="icon flag disabled" id="from-flag" src="" alt="" />
+                            <span class="lang-name" id="from-name">Select language</span>
+                        </div>
+                        <div class="dropdown-list disabled" id="dropdown-from"></div>
                     </div>
-                    <div class="dropdown-list disabled" id="dropdown-from"></div>
+
+                    <!-- Arrow icon -->
+                    <div class="icon arrow-3"></div>
+
+                    <!-- Left language box -->
+                    <div class="lang-container">
+                        <div class="lang-box" id="to-lang">
+                            <img class="icon flag disabled" id="to-flag" src="" alt="" />
+                            <span class="lang-name" id="to-name">Select language</span>
+                        </div>
+                        <div class="dropdown-list disabled" id="dropdown-to"></div>
+                    </div>
                 </div>
 
-                <!-- Arrow icon -->
-                <div class="icon arrow-3"></div>
-
-                <!-- Left language box -->
-                <div class="lang-container">
-                    <div class="lang-box" id="to-lang">
-                        <img class="icon flag disabled" id="to-flag" src="" alt="" />
-                        <span class="lang-name" id="to-name">Select language</span>
-                    </div>
-                    <div class="dropdown-list disabled" id="dropdown-to"></div>
+                <div class="start-button-container">
+                    <a class="start-button"><span>►</span>Start</a>
                 </div>
-            </section>
-            
-            <section class="start-button-container">
-                <a class="start-button"><span>►</span>Start</a>
-            </section>
+            </div>
         </div>
     </main>
 

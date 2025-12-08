@@ -1,7 +1,25 @@
 .start-pg {
     height: 100svh;
+    width: 100svw;
     box-sizing: border-box;
     overflow: hidden;
+    display: grid;
+}
+
+.upper-container {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: start;
+    padding-top: 10svh;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: end;
+    padding-bottom: 35svh;
 }
 
 body {
@@ -30,8 +48,6 @@ body {
 }
 
 .language-selector {
-    display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
@@ -44,19 +60,26 @@ body {
 .start-button-container {
     display: flex;
     height: 5rem;
-    justify-content: center;
     align-items: center;
 }
 
 @media only screen and (orientation: portrait) and (max-width:600px) {
-    .start-pg .title-container {
-        padding-top: 4rem;
+    .upper-container {
+       padding-top: 20svh;
+    }
+
+    .bottom-container {
+        padding-bottom: 40svh;
     }
 }
 
 @media only screen and (orientation: landscape) and (max-width:1000px) {
-    .start-pg .title-container {
-        padding-top: 3rem;
+    .upper-container {
+       padding-top: 8svh;
+    }
+
+    .bottom-container {
+        padding-bottom: 10svh;
     }
 }
 
