@@ -28,6 +28,7 @@
     align-items: center;
     gap: .6rem;
     transition: background-color var(--transition-speed);
+    overflow: hidden;
 }
 
 .lang-box:hover {
