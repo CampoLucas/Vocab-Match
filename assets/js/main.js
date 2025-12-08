@@ -1,4 +1,7 @@
-let languages = LANGUAGES;
+
+let languages = [];
+let subtitleTexts = [];
+let appData = null;
 let fromSelected = null;
 let toSelected = null;
 
@@ -15,7 +18,24 @@ const toName = document.getElementById("to-name");
 
 const subtitle = document.getElementById("subtitle");
 
-renderDropdowns();
+// Load JSON
+fetch("/assets/data/app-data.json")
+    .then(response => {
+        if (!response.ok){
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        appData = data;
+        languages = data.languages;
+        renderDropdowns();
+        startSubtitleRotation();
+    })
+    // .catch(error => {
+    //     console.error('Listen! Error fetching or parsing JSON:', error);
+    //     document.getElementById("json-output").textContent = "Failed to load JSON";
+    // });
 
 function renderDropdowns() {
     dropdownFrom.innerHTML = "";
@@ -55,14 +75,12 @@ function selectLanguage(id, side) {
         fromSelected = id;
         fromFlag.src = lang.icon;
         fromFlag.alt = lang.iconAlt;
-        fromFlag.style.opacity = 1;
         fromFlag.classList.remove("disabled");
         fromName.textContent = lang.name;
     } else {
         toSelected = id;
         toFlag.src = lang.icon;
         toFlag.alt = lang.iconAlt;
-        toFlag.style.opacity = 1;
         toFlag.classList.remove("disabled");
         toName.textContent = lang.name;
     }
@@ -95,21 +113,6 @@ function toggle(drop) {
     }
 }
 
-// Rotate subtitle language every 10s
-const subtitleTexts = [
-    "Select your language!!!",
-    "Elige tu idioma!!!",
-    "言語を選択してください!!!",
-    "Scegli la tua lingua!!!"
-];
-
-let index = 0;
-
-setInterval(() => {
-    index = (index + 1) % subtitleTexts.length;
-    subtitle.textContent = subtitleTexts[index];
-}, 10000);
-
 // Close dropdowns when clicking outside
 document.addEventListener("click", (event) => {
     const clickedInsideFrom = fromBox.contains(event.target) || dropdownFrom.contains(event.target);
@@ -121,3 +124,13 @@ document.addEventListener("click", (event) => {
         dropdownTo.classList.add("disabled");
     }
 });
+
+function startSubtitleRotation() {
+    let list = appData["select-phrases"];
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % list.length;
+        subtitle.textContent = list[index];
+    }, 10000);
+}

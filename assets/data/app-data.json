@@ -1,0 +1,70 @@
+{
+    "languages": [
+        {
+            "id": "en",
+            "name": "English",
+            "icon": "/assets/images/icons/flags/en-flag.svg",
+            "iconAlt": "English flag",
+            "words": "./assets/data/lang/en.json"
+        },
+        {
+            "id": "es",
+            "name": "Español",
+            "icon": "/assets/images/icons/flags/es-flag.svg",
+            "iconAlt": "Spanish flag",
+            "words": "./assets/data/lang/en.json"
+        },
+        {
+            "id": "jp",
+            "name": "日本語",
+            "icon": "/assets/images/icons/flags/jp-flag.svg",
+            "iconAlt": "Japanese flag",
+            "words": "./assets/data/lang/en.json"
+        },
+        {
+            "id": "it",
+            "name": "Italiano",
+            "icon": "/assets/images/icons/flags/it-flag.svg",
+            "iconAlt": "Italian flag",
+            "words": "./assets/data/lang/en.json"
+        },
+        {
+            "id": "de",
+            "name": "Deutsch",
+            "icon": "/assets/images/icons/flags/de-flag.svg",
+            "iconAlt": "German flag",
+            "words": "/assets/data/words/en.json"
+        }
+    ],
+
+    "select-phrases": [
+        "What language do you wanna practice today?",
+        "¿Qué idioma quieres practicar hoy?",
+        "今日はどの言語を練習したい？",
+        "Che lingua vuoi praticare oggi?",
+        "Welche Sprache willst du heute üben?"
+    ],
+    
+    "categories": [
+        {
+            "id": "animals",
+            "name": "Animals",
+            "words": [0, 1, 2]
+        },
+        {
+            "id": "day-to-day",
+            "name": "Day to day",
+            "words": [3]
+        },
+        {
+            "id": "nature",
+            "name": "Nature",
+            "words": [4]
+        },
+        {
+            "id": "colors",
+            "name": "Colors",
+            "words": [5, 6]
+        }
+    ]
+}

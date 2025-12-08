@@ -1,7 +1,7 @@
 fetch('./assets/data/en.json')
     .then(res => {
         if (!res.ok) {
-            throw new Error(`Listen! HTTP error! Status: ${response.status}`);
+            throw new Error(`Listen! HTTP error! Status: ${res.status}`);
         }
         return res.json();
     })
