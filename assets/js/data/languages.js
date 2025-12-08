@@ -3,7 +3,7 @@ const LANGUAGES = [
         id: "en",
         name: "English",
         icon: "./assets/images/icons/en-flag.svg",
-        iconAlt: "English flag"
+        iconAlt: "English flag",
     },
     {
         id: "es",
