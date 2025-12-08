@@ -19,7 +19,7 @@ const toName = document.getElementById("to-name");
 const subtitle = document.getElementById("subtitle");
 
 // Load JSON
-fetch("/assets/data/app-data.json")
+fetch("/assets/data/app-data2.json")
     .then(response => {
         if (!response.ok){
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -32,10 +32,10 @@ fetch("/assets/data/app-data.json")
         renderDropdowns();
         startSubtitleRotation();
     })
-    // .catch(error => {
-    //     console.error('Listen! Error fetching or parsing JSON:', error);
-    //     document.getElementById("json-output").textContent = "Failed to load JSON";
-    // });
+    .catch(error => {
+        console.error('Listen! Error fetching or parsing JSON:', error);
+        document.getElementById("json-output").textContent = "Failed to load JSON";
+    });
 
 function renderDropdowns() {
     dropdownFrom.innerHTML = "";
