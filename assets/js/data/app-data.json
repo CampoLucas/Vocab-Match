@@ -3,7 +3,7 @@
         {
             "id": "en",
             "name": "English",
-            "icon": "/assets/images/icons/flags/en-flag.svg",
+            "icon": "/assets/images/icons/f/en-flag.svg",
             "iconAlt": "English flag",
             "words": "./assets/data/lang/en.json"
         },
