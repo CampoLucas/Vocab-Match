@@ -1,3 +1,11 @@
+const categories = [ 
+    "animals", "food-drinks", "clothing", "body-parts", "household", 
+    "nature", "travel", "technology", "abstract", "verbs" 
+];
+
+let selectedTile = null;
+let isBoardLocked = false;
+
 function openGamePopup() {
     document.getElementById("game-overlay").classList.remove("hidden");
 }
@@ -22,16 +30,19 @@ document.querySelector(".start-button").addEventListener("click", () => {
 // Game logic
 
 async function startGame(fromLang, toLang) {
-    // Step 1 — get 4 random IDs
+    selectedTile = null;
+    isBoardLocked = false;
+    
+    // get 4 random IDs
     const wordIds = await getRandomWords("animals", 0); // level1
 
-    // Step 2 — fetch translations
+    // fetch translations
     const tiles = await getTranslationsForWords(wordIds, fromLang, toLang);
 
-    // Step 3 — mix 8 tiles
+    // mix 8 tiles
     const shuffledTiles = prepareTiles(tiles);
 
-    // Step 4 — send to UI (you will populate popup here)
+    // send to UI (you will populate popup here)
     renderGamePopup(shuffledTiles);
 }
 
@@ -56,35 +67,66 @@ function renderGamePopup(tiles) {
     });
 }
 
-let selectedTile = null;
+function showWinScreen() {
+    // Basic version – you can replace with a custom overlay
+    alert("Nice! You matched all pairs! 🎉");
+    closeGamePopup();
+}
 
 function onTileClick(tile) {
+    // Block clicks while animating wrong pair
+    if (isBoardLocked) return;
+
+    // Don't allow clicking already matched tiles
+    if (tile.classList.contains("correct")) return;
+
+    // Don’t allow re-clicking the same tile as second click
+    if (tile === selectedTile) return;
+
+    // First click
     if (!selectedTile) {
         selectedTile = tile;
         tile.classList.add("selected");
         return;
     }
 
-    // second click
-    if (selectedTile.dataset.id === tile.dataset.id &&
-        selectedTile.dataset.lang !== tile.dataset.lang) {
+    const first = selectedTile;
+    const second = tile;
 
-        // MATCH!
-        selectedTile.classList.add("correct");
-        tile.classList.add("correct");
+    //
+
+
+    // Reset selection for next round
+    selectedTile = null;
+    first.classList.remove("selected");
+
+    // match
+    if (first.dataset.id === second.dataset.id &&
+        first.dataset.lang !== second.dataset.lang) {
+
+        first.classList.add("correct");
+        second.classList.add("correct");
+
+        // Check if all tiles are matched
+        const totalTiles = document.querySelectorAll("#game-grid .game-tile").length;
+        const matchedTiles = document.querySelectorAll("#game-grid .game-tile.correct").length;
+
+        if (matchedTiles === totalTiles) {
+            showWinScreen();
+        }
+
     } else {
-        // FAIL
-        selectedTile.classList.add("wrong");
-        tile.classList.add("wrong");
+        // wrong
+        isBoardLocked = true;
+        first.classList.add("wrong");
+        second.classList.add("wrong");
 
         setTimeout(() => {
-            selectedTile.classList.remove("wrong");
-            tile.classList.remove("wrong");
-        }, 800);
+            first.classList.remove("wrong");
+            second.classList.remove("wrong");
+            isBoardLocked = false;
+        }, 1000); // 1 second
     }
-
-    selectedTile.classList.remove("selected");
-    selectedTile = null;
 }
 
 // Get the words
