@@ -8,7 +8,7 @@ async function testLanguages(){
     console.log(await testLanguage("es", categories));
 
     // Just animals, because the dictionary isn't finished
-    console.log(await testLanguage("jp", [ "animals" ]));
+    console.log(await testLanguage("jp", categories));
 }
 
 
