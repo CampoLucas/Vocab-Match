@@ -34,7 +34,7 @@ async function startGame(fromLang, toLang) {
     isBoardLocked = false;
     
     // get 4 random IDs
-    const wordIds = await getRandomWords("animals", 0); // level1
+    const wordIds = await getRandomWords(pickRandom(categories), 0); // level1
 
     // fetch translations
     const tiles = await getTranslationsForWords(wordIds, fromLang, toLang);
@@ -185,4 +185,12 @@ function shuffleArray(arr) {
         .map(value => ({ value, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
         .map(obj => obj.value);
+}
+
+function pickRandom(arr) {
+    if (!Array.isArray(arr) || arr.length === 0) {
+        throw new Error("Array is empty or invalid");
+    }
+    const i = Math.floor(Math.random() * arr.length);
+    return arr[i];
 }
