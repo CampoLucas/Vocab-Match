@@ -5,7 +5,8 @@
             "name": "English",
             "icon": "./assets/images/icons/flags/en-flag.svg",
             "iconAlt": "English flag",
-            "words": "./assets/data/lang/en.json"
+            "words": "./assets/data/lang/en.json",
+            "tested": 0
         },
         {
             "id": "es",
@@ -19,21 +20,16 @@
             "name": "日本語",
             "icon": "./assets/images/icons/flags/jp-flag.svg",
             "iconAlt": "Japanese flag",
-            "words": "./assets/data/lang/en.json"
+            "words": "./assets/data/lang/en.json",
+            "tested": 0
         },
         {
             "id": "it",
             "name": "Italiano",
             "icon": "./assets/images/icons/flags/it-flag.svg",
             "iconAlt": "Italian flag",
-            "words": "./assets/data/lang/en.json"
-        },
-        {
-            "id": "de",
-            "name": "Deutsch",
-            "icon": "./assets/images/icons/flags/de-flag.svg",
-            "iconAlt": "German flag",
-            "words": "./assets/data/lang/en.json"
+            "words": "./assets/data/lang/en.json",
+            "tested": 0
         }
     ],
 

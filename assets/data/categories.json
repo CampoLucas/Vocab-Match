@@ -14,7 +14,7 @@
         {
             "id": "food-drinks",
             "name": "Food & Drinks",
-            "lavels": [
+            "levels": [
                 { "level1": [ "bread", "milk", "water", "rice", "apple", "banana", "egg", "cheese", "meat", "butter", "soup", "pasta", "carrot", "potato", "tea", "coffee" ] },
                 { "level2": [ "orange", "grape", "strawberry", "lettuce", "onion", "garlic", "chicken-food", "beef", "yogurt", "juice", "cake", "cookie", "cereal", "salt", "sugar", "pepper" ] },
                 { "level3": [ "broccoli", "mushroom", "pineapple", "watermelon", "avocado", "tomato", "cucumber", "shrimp", "salmon", "olive", "honey", "jam", "sandwich", "noodles", "taco", "chocolate" ] },
@@ -25,7 +25,7 @@
         {
             "id": "clothing",
             "name": "Clothing",
-            "lavels": [
+            "levels": [
                 { "level1": [ "shirt", "pants", "shoes", "hat", "socks", "coat", "dress", "skirt", "jacket", "boots", "belt", "scarf", "gloves", "shorts", "pajamas", "sweater" ] },
                 { "level2": [ "tie", "uniform", "hoodie", "raincoat", "sandals", "sneakers", "blouse", "cap", "jeans", "vest", "leggings", "swimsuit", "slippers", "overalls", "sunglasses", "backpack" ] },
                 { "level3": [ "kimono", "cardigan", "beanie", "boots", "trenchcoat", "parka", "tights", "loafers", "gown", "tuxedo", "helmet", "cloak", "poncho", "gloves", "mittens", "wallet" ] },
@@ -36,7 +36,7 @@
         {
             "id": "body-parts",
             "name": "Body Parts",
-            "lavels": [
+            "levels": [
                 { "level1": [ "head", "eyes", "nose", "mouth", "ear", "hand", "arm", "leg", "foot", "finger", "hair", "face", "neck", "back", "knee", "toe" ] },
                 { "level2": [ "shoulder", "elbow", "wrist", "ankle", "chest", "stomach", "hip", "thumb", "palm", "forehead", "chin", "cheek", "thigh", "heel", "rib", "lung" ] },
                 { "level3": [ "intestine", "muscle", "bone", "skull", "spine", "jaw", "liver", "kidney", "heart", "vein", "artery", "joint", "nerve", "spleen", "tendon", "brain" ] },
@@ -47,8 +47,8 @@
         {
             "id": "household",
             "name": "Household",
-            "lavels": [
-                { "level1": [ "chair", "table", "bed", "door", "window", "lamp", "cup", "plate", "spoon", "fork", "knife", "pillow", "blanket", "clock", "phone", "TV" ] },
+            "levels": [
+                { "level1": [ "chair", "table", "bed", "door", "window", "lamp", "cup", "plate", "spoon", "fork", "knife", "pillow", "blanket", "clock", "phone", "tv" ] },
                 { "level2": [ "sofa", "mirror", "desk", "shelf", "curtain", "bottle", "towel", "oven", "stove", "fridge", "trash-can", "broom", "brush", "candle", "fan", "microwave" ] },
                 { "level3": [ "washing-machine", "vacuum", "heater", "charger", "keyboard", "monitor", "drawer", "cabinet", "mirror", "mattress", "cushion", "toolbox", "hammer", "screwdriver", "pliers", "basket" ] },
                 { "level4": [ "thermostat", "router", "blender", "humidifier", "dehumidifier", "extension-cord", "power-strip", "bookshelf", "faucet", "pipe", "remote-control", "sewing-machine", "toolkit", "measuring-cup", "whisk", "kettle" ] },
@@ -58,7 +58,7 @@
         {
             "id": "nature",
             "name": "Nature / Weather",
-            "lavels": [
+            "levels": [
                 { "level1": [ "sun", "moon", "rain", "snow", "wind", "cloud", "tree", "flower", "rock", "river", "mountain", "beach", "lake", "forest", "leaf", "sky" ] },
                 { "level2": [ "storm", "thunder", "lightning", "fog", "mist", "soil", "sand", "valley", "hill", "island", "desert", "waterfall", "wave", "tide", "breeze", "frost" ] },
                 { "level3": [ "hurricane", "tornado", "blizzard", "monsoon", "drought", "glacier", "canyon", "volcano", "eclipse", "meadow", "reef", "dune", "cliff", "avalanche", "geyser", "swamp" ] },
@@ -69,7 +69,7 @@
         {
             "id": "travel",
             "name": "Travel & Places",
-            "lavels": [
+            "levels": [
                 { "level1": [ "school", "house", "park", "store", "street", "city", "bus", "car", "train", "airport", "hotel", "bank", "bridge", "restaurant", "station", "road" ] },
                 { "level2": [ "hospital", "museum", "library", "market", "mall", "subway", "police-station", "gas-station", "beach-resort", "village", "office", "factory", "farm", "port", "stadium", "temple" ] },
                 { "level3": [ "embassy", "university", "laboratory", "courthouse", "harbor", "observatory", "arena", "campsite", "monument", "post-office", "bakery", "pharmacy", "clinic", "dormitory", "suburb", "hostel" ] },
@@ -80,10 +80,10 @@
         {
             "id": "technology",
             "name": "Technology",
-            "lavels": [
-                { "level1": [ "computer", "phone", "mouse-pc", "keyboard", "screen", "cable", "battery", "camera", "clock", "speaker", "printer", "radio", "tablet", "charger", "gamepad", "laptop" ] },
+            "levels": [
+                { "level1": [ "computer", "cellphone", "mouse-pc", "keyboard", "screen", "cable", "battery", "camera", "clock", "speaker", "printer", "radio", "tablet", "charger", "gamepad", "laptop" ] },
                 { "level2": [ "router", "server", "modem", "joystick", "projector", "console", "headset", "microphone", "usb-drive", "memory-card", "monitor", "power-bank", "stylus", "hard-drive", "scanner", "smartwatch" ] },
-                { "level3": [ "processor", "graphics-card", "motherboard", "ram", "ssd", "operating-system", "app", "database", "wifi-signal", "firewall", "browser", "cloud", "ai-model", "algorithm", "sensor", "drone" ] },
+                { "level3": [ "processor", "graphics-card", "motherboard", "ram", "ssd", "operating-system", "app", "database", "wifi-signal", "firewall", "browser", "cloud-web", "ai-model", "algorithm", "sensor", "drone" ] },
                 { "level4": [ "encryption", "virtualization", "compiler", "framework", "protocol", "neural-network", "blockchain", "automation", "firmware", "robotics", "distributed-system", "api-gateway", "microcontroller", "quantum-bit", "thermal-paste", "architecture" ] },
                 { "level5": [ "tensor-core", "photolithography", "quantum-computing", "superconductivity", "nanotechnology", "machine-vision", "autonomous-control", "genetic-algorithm", "edge-computing", "deep-learning", "electromagnetic-shielding", "optical-encoder", "lidar-array", "rfid-matrix", "meta-learning", "neuromorphic-chip" ] }
             ]
@@ -91,7 +91,7 @@
         {
             "id": "abstract",
             "name": "Abstract",
-            "lavels": [
+            "levels": [
                 { "level1": [ "love", "hate", "time", "day", "night", "light", "dark", "good", "bad", "happy", "sad", "big", "small", "easy", "hard", "wrong" ] },
                 { "level2": [ "strength", "courage", "fear", "hope", "trust", "anger", "pride", "peace", "chaos", "beauty", "truth", "lie", "luck", "choice", "chance", "fate" ] },
                 { "level3": [ "justice", "freedom", "equality", "belief", "culture", "memory", "habit", "pattern", "goal", "challenge", "effort", "method", "doubt", "logic", "reason", "failure" ] },
@@ -102,7 +102,7 @@
         {
             "id": "verbs",
             "name": "Verbs",
-            "lavels": [
+            "levels": [
                 { "level1": [ "eat", "drink", "sleep", "walk", "run", "sit", "stand", "read", "write", "talk", "jump", "swim", "open", "close", "look", "listen" ] },
                 { "level2": [ "cook", "drive", "ride", "climb", "push", "pull", "carry", "cut", "draw", "wash", "clean", "throw", "catch", "shoot", "build", "break" ] },
                 { "level3": [ "decide", "choose", "compare", "explain", "describe", "discover", "imagine", "create", "improve", "repair", "measure", "translate", "memorize", "rotate", "signal", "travel" ] },

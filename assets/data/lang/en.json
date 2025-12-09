@@ -355,6 +355,7 @@
         "clock": "Clock",
         "phone": "Phone",
         "tv": "Tv",
+        "cellphone": "Cellphone",
 
         "sofa": "Sofa",
         "mirror": "Mirror",
@@ -428,6 +429,7 @@
         "snow": "Snow",
         "wind": "Wind",
         "cloud": "Cloud",
+        "cloud-web": "Cloud",
         "tree": "Tree",
         "flower": "Flower",
         "rock": "Rock",

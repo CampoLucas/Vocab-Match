@@ -55,13 +55,31 @@ Page 1 Scope:
                 </div>
 
                 <div class="start-button-container">
-                    <a class="start-button"><span>►</span>Start</a>
+                    <button class="start-button"><span>►</span>Start</button>
                 </div>
                 <div id="json-output" style="padding: 1rem; font-size: 1.2rem;"></div>
+            </div>
+        </div>
+
+        <!-- Game popup -->
+        <div id="game-overlay" class="hidden">
+            <div id="game-popup">
+
+                <!-- Header -->
+                <div class="game-header">
+                    <h2 id="game-title">Match the Words!</h2>
+                    <button id="game-close-btn">✕</button>
+                </div>
+
+                <!-- Game grid -->
+                <div id="game-grid"></div>
+
             </div>
         </div>
     </main>
 
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/game.js"></script>
+    <script src="./assets/js/test/check-lang-test.js"></script>
 </body>
 </html>
