@@ -578,6 +578,1702 @@
                 { "char": "鼬", "reading": "いたち" }
             ],
             "romaji": "itachi"
+        },
+
+        "bread": {
+            "kanji": "パン",
+            "kana": "パン",
+            "furigana": [],
+            "romaji": "pan"
+        },
+        "milk": {
+            "kanji": "牛乳",
+            "kana": "ぎゅうにゅう",
+            "furigana": [
+                { "char": "牛乳", "reading": "ぎゅうにゅう" }
+            ],
+            "romaji": "gyuunyuu"
+        },
+        "water": {
+            "kanji": "水",
+            "kana": "みず",
+            "furigana": [
+                { "char": "水", "reading": "みず" }
+            ],
+            "romaji": "mizu"
+        },
+        "rice": {
+            "kanji": "米",
+            "kana": "こめ",
+            "furigana": [
+                { "char": "米", "reading": "こめ" }
+            ],
+            "romaji": "kome"
+        },
+        "apple": {
+            "kanji": "林檎",
+            "kana": "りんご",
+            "furigana": [
+                { "char": "林檎", "reading": "りんご" }
+            ],
+            "romaji": "ringo"
+        },
+        "banana": {
+            "kanji": "バナナ",
+            "kana": "バナナ",
+            "furigana": [],
+            "romaji": "banana"
+        },
+        "egg": {
+            "kanji": "卵",
+            "kana": "たまご",
+            "furigana": [
+                { "char": "卵", "reading": "たまご" }
+            ],
+            "romaji": "tamago"
+        },
+        "cheese": {
+            "kanji": "チーズ",
+            "kana": "チーズ",
+            "furigana": [],
+            "romaji": "tiizu"
+        },
+        "meat": {
+            "kanji": "肉",
+            "kana": "にく",
+            "furigana": [
+                { "char": "肉", "reading": "にく" }
+            ],
+            "romaji": "niku"
+        },
+        "butter": {
+            "kanji": "バター",
+            "kana": "バター",
+            "furigana": [],
+            "romaji": "bataa"
+        },
+        "soup": {
+            "kanji": "スープ",
+            "kana": "スープ",
+            "furigana": [],
+            "romaji": "suupu"
+        },
+        "pasta": {
+            "kanji": "パスタ",
+            "kana": "パスタ",
+            "furigana": [],
+            "romaji": "pasuta"
+        },
+        "carrot": {
+            "kanji": "人参",
+            "kana": "にんじん",
+            "furigana": [
+                { "char": "人参", "reading": "にんじん" }
+            ],
+            "romaji": "ninjin"
+        },
+        "potato": {
+            "kanji": "じゃがいも",
+            "kana": "じゃがいも",
+            "furigana": [],
+            "romaji": "jyagaimo"
+        },
+        "tea": {
+            "kanji": "お茶",
+            "kana": "おちゃ",
+            "furigana": [
+                { "char": "お", "reading": null },
+                { "char": "茶", "reading": "ちゃ" }
+            ],
+            "romaji": "otya"
+        },
+        "coffee": {
+            "kanji": "コーヒー",
+            "kana": "コーヒー",
+            "furigana": [],
+            "romaji": "koohii"
+        },
+
+        "orange": {
+            "kanji": "オレンジ",
+            "kana": "オレンジ",
+            "furigana": [],
+            "romaji": "orenzi"
+        },
+        "grape": {
+            "kanji": "葡萄",
+            "kana": "ぶどう",
+            "furigana": [
+                { "char": "葡萄", "reading": "ぶどう" }
+            ],
+            "romaji": "budou"
+        },
+        "strawberry": {
+            "kanji": "苺",
+            "kana": "いちご",
+            "furigana": [
+                { "char": "苺", "reading": "いちご" }
+            ],
+            "romaji": "itigo"
+        },
+        "lettuce": {
+            "kanji": "レタス",
+            "kana": "レタス",
+            "furigana": [],
+            "romaji": "retasu"
+        },
+        "onion": {
+            "kanji": "玉ねぎ",
+            "kana": "たまねぎ",
+            "furigana": [
+                { "char": "玉", "reading": "たま" },
+                { "char": "ねぎ", "reading": null }
+            ],
+            "romaji": "tamanegi"
+        },
+        "garlic": {
+            "kanji": "にんにく",
+            "kana": "にんにく",
+            "furigana": [],
+            "romaji": "ninniku"
+        },
+        "chicken-food": {
+            "kanji": "鶏肉",
+            "kana": "とりにく",
+            "furigana": [
+                { "char": "鶏", "reading": "とり" },
+                { "char": "肉", "reading": "にく" }
+            ],
+            "romaji": "toriniku"
+        },
+        "beef": {
+            "kanji": "牛肉",
+            "kana": "ぎゅうにく",
+            "furigana": [
+                { "char": "牛", "reading": "ぎゅう" },
+                { "char": "肉", "reading": "にく" }
+            ],
+            "romaji": "gyuuniku"
+        },
+        "yogurt": {
+            "kanji": "ヨーグルト",
+            "kana": "ヨーグルト",
+            "furigana": [],
+            "romaji": "yooguruto"
+        },
+        "juice": {
+            "kanji": "ジュース",
+            "kana": "ジュース",
+            "furigana": [],
+            "romaji": "jyuusu"
+        },
+        "cake": {
+            "kanji": "ケーキ",
+            "kana": "ケーキ",
+            "furigana": [],
+            "romaji": "keeki"
+        },
+        "cookie": {
+            "kanji": "クッキー",
+            "kana": "クッキー",
+            "furigana": [],
+            "romaji": "kukkii"
+        },
+        "cereal": {
+            "kanji": "シリアル",
+            "kana": "シリアル",
+            "furigana": [],
+            "romaji": "siriaru"
+        },
+        "salt": {
+            "kanji": "塩",
+            "kana": "しお",
+            "furigana": [
+                { "char": "塩", "reading": "しお" }
+            ],
+            "romaji": "sio"
+        },
+        "sugar": {
+            "kanji": "砂糖",
+            "kana": "さとう",
+            "furigana": [
+                { "char": "砂糖", "reading": "さとう" }
+            ],
+            "romaji": "satou"
+        },
+        "pepper": {
+            "kanji": "胡椒",
+            "kana": "こしょう",
+            "furigana": [
+                { "char": "胡椒", "reading": "こしょう" }
+            ],
+            "romaji": "kosyou"
+        },
+
+        "broccoli": {
+            "kanji": "ブロッコリー",
+            "kana": "ブロッコリー",
+            "furigana": [],
+            "romaji": "burokkorii"
+        },
+        "mushroom": {
+            "kanji": "茸",
+            "kana": "きのこ",
+            "furigana": [
+                { "char": "茸", "reading": "きのこ" }
+            ],
+            "romaji": "kinoko"
+        },
+        "pineapple": {
+            "kanji": "パイナップル",
+            "kana": "パイナップル",
+            "furigana": [],
+            "romaji": "painappuru"
+        },
+        "watermelon": {
+            "kanji": "西瓜",
+            "kana": "すいか",
+            "furigana": [
+                { "char": "西瓜", "reading": "すいか" }
+            ],
+            "romaji": "suika"
+        },
+        "avocado": {
+            "kanji": "アボカド",
+            "kana": "アボカド",
+            "furigana": [],
+            "romaji": "abokado"
+        },
+        "tomato": {
+            "kanji": "トマト",
+            "kana": "トマト",
+            "furigana": [],
+            "romaji": "tomato"
+        },
+        "cucumber": {
+            "kanji": "胡瓜",
+            "kana": "きゅうり",
+            "furigana": [
+                { "char": "胡瓜", "reading": "きゅうり" }
+            ],
+            "romaji": "kyuuri"
+        },
+        "shrimp": {
+            "kanji": "海老",
+            "kana": "えび",
+            "furigana": [
+                { "char": "海老", "reading": "えび" }
+            ],
+            "romaji": "ebi"
+        },
+        "salmon": {
+            "kanji": "鮭",
+            "kana": "さけ",
+            "furigana": [
+                { "char": "鮭", "reading": "さけ" }
+            ],
+            "romaji": "sake"
+        },
+        "olive": {
+            "kanji": "オリーブ",
+            "kana": "オリーブ",
+            "furigana": [],
+            "romaji": "oriibu"
+        },
+        "honey": {
+            "kanji": "蜂蜜",
+            "kana": "はちみつ",
+            "furigana": [
+                { "char": "蜂蜜", "reading": "はちみつ" }
+            ],
+            "romaji": "hatimitsu"
+        },
+        "jam": {
+            "kanji": "ジャム",
+            "kana": "ジャム",
+            "furigana": [],
+            "romaji": "jyamu"
+        },
+        "sandwich": {
+            "kanji": "サンドイッチ",
+            "kana": "サンドイッチ",
+            "furigana": [],
+            "romaji": "sandoitti"
+        },
+        "noodles": {
+            "kanji": "麺",
+            "kana": "めん",
+            "furigana": [
+                { "char": "麺", "reading": "めん" }
+            ],
+            "romaji": "men"
+        },
+        "taco": {
+            "kanji": "タコス",
+            "kana": "タコス",
+            "furigana": [],
+            "romaji": "takosu"
+        },
+        "chocolate": {
+            "kanji": "チョコレート",
+            "kana": "チョコレート",
+            "furigana": [],
+            "romaji": "tyokoreeto"
+        },
+
+        "spinach": {
+            "kanji": "ほうれん草",
+            "kana": "ほうれんそう",
+            "furigana": [
+                { "char": "ほうれん", "reading": null },
+                { "char": "草", "reading": "そう" }
+            ],
+            "romaji": "hourensou"
+        },
+        "cabbage": {
+            "kanji": "キャベツ",
+            "kana": "キャベツ",
+            "furigana": [],
+            "romaji": "kyabetsu"
+        },
+        "zucchini": {
+            "kanji": "ズッキーニ",
+            "kana": "ズッキーニ",
+            "furigana": [],
+            "romaji": "zukkiini"
+        },
+        "berries": {
+            "kanji": "ベリー",
+            "kana": "ベリー",
+            "furigana": [],
+            "romaji": "berii"
+        },
+        "almond": {
+            "kanji": "アーモンド",
+            "kana": "アーモンド",
+            "furigana": [],
+            "romaji": "aamondo"
+        },
+        "walnut": {
+            "kanji": "胡桃",
+            "kana": "くるみ",
+            "furigana": [
+                { "char": "胡桃", "reading": "くるみ" }
+            ],
+            "romaji": "kurumi"
+        },
+        "sausage": {
+            "kanji": "ソーセージ",
+            "kana": "ソーセージ",
+            "furigana": [],
+            "romaji": "sooseeji"
+        },
+        "curry": {
+            "kanji": "カレー",
+            "kana": "カレー",
+            "furigana": [],
+            "romaji": "karee"
+        },
+        "stew": {
+            "kanji": "シチュー",
+            "kana": "シチュー",
+            "furigana": [],
+            "romaji": "sitiyuu"
+        },
+        "burrito": {
+            "kanji": "ブリトー",
+            "kana": "ブリトー",
+            "furigana": [],
+            "romaji": "buritoo"
+        },
+        "sushi": {
+            "kanji": "寿司",
+            "kana": "すし",
+            "furigana": [
+                { "char": "寿司", "reading": "すし" }
+            ],
+            "romaji": "susi"
+        },
+        "dumpling": {
+            "kanji": "餃子",
+            "kana": "ぎょうざ",
+            "furigana": [
+                { "char": "餃子", "reading": "ぎょうざ" }
+            ],
+            "romaji": "gyouza"
+        },
+        "vinegar": {
+            "kanji": "酢",
+            "kana": "す",
+            "furigana": [
+                { "char": "酢", "reading": "す" }
+            ],
+            "romaji": "su"
+        },
+        "mustard": {
+            "kanji": "マスタード",
+            "kana": "マスタード",
+            "furigana": [],
+            "romaji": "masutaado"
+        },
+        "cinnamon": {
+            "kanji": "シナモン",
+            "kana": "シナモン",
+            "furigana": [],
+            "romaji": "sinamon"
+        },
+        "ginger": {
+            "kanji": "生姜",
+            "kana": "しょうが",
+            "furigana": [
+                { "char": "生姜", "reading": "しょうが" }
+            ],
+            "romaji": "syouga"
+        },
+
+        "quinoa": {
+            "kanji": "キヌア",
+            "kana": "キヌア",
+            "furigana": [],
+            "romaji": "kinua"
+        },
+        "chickpeas": {
+            "kanji": "ヒヨコマメ",
+            "kana": "ヒヨコマメ",
+            "furigana": [],
+            "romaji": "hiyokomame"
+        },
+        "lentils": {
+            "kanji": "レンズマメ",
+            "kana": "レンズマメ",
+            "furigana": [],
+            "romaji": "renzumame"
+        },
+        "espresso": {
+            "kanji": "エスプレッソ",
+            "kana": "エスプレッソ",
+            "furigana": [],
+            "romaji": "esupuresso"
+        },
+        "truffle": {
+            "kanji": "トリュフ",
+            "kana": "トリュフ",
+            "furigana": [],
+            "romaji": "toryufu"
+        },
+        "anchovy": {
+            "kanji": "アンチョビ",
+            "kana": "アンチョビ",
+            "furigana": [],
+            "romaji": "antyobi"
+        },
+        "saffron": {
+            "kanji": "サフラン",
+            "kana": "サフラン",
+            "furigana": [],
+            "romaji": "safuran"
+        },
+        "oyster": {
+            "kanji": "牡蠣",
+            "kana": "かき",
+            "furigana": [
+                { "char": "牡蠣", "reading": "かき" }
+            ],
+            "romaji": "kaki"
+        },
+        "scallop": {
+            "kanji": "帆立",
+            "kana": "ほたて",
+            "furigana": [
+                { "char": "帆立", "reading": "ほたて" }
+            ],
+            "romaji": "hotate"
+        },
+        "basil": {
+            "kanji": "バジル",
+            "kana": "バジル",
+            "furigana": [],
+            "romaji": "baziru"
+        },
+        "rosemary": {
+            "kanji": "ローズマリー",
+            "kana": "ローズマリー",
+            "furigana": [],
+            "romaji": "roozumarii"
+        },
+        "thyme": {
+            "kanji": "タイム",
+            "kana": "タイム",
+            "furigana": [],
+            "romaji": "taimu"
+        },
+        "paprika": {
+            "kanji": "パプリカ",
+            "kana": "パプリカ",
+            "furigana": [],
+            "romaji": "papurika"
+        },
+        "miso": {
+            "kanji": "味噌",
+            "kana": "みそ",
+            "furigana": [
+                { "char": "味噌", "reading": "みそ" }
+            ],
+            "romaji": "miso"
+        },
+        "kombucha": {
+            "kanji": "昆布茶",
+            "kana": "こんぶちゃ",
+            "furigana": [
+                { "char": "昆布", "reading": "こんぶ" },
+                { "char": "茶", "reading": "ちゃ" }
+            ],
+            "romaji": "kombutya"
+        },
+        "kefir": {
+            "kanji": "ケフィア",
+            "kana": "ケフィア",
+            "furigana": [],
+            "romaji": "kefia"
+        },
+
+        "shirt": {
+            "kanji": "シャツ",
+            "kana": "シャツ",
+            "furigana": [],
+            "romaji": "syatsu"
+        },
+        "pants": {
+            "kanji": "ズボン",
+            "kana": "ズボン",
+            "furigana": [],
+            "romaji": "zubon"
+        },
+        "shoes": {
+            "kanji": "靴",
+            "kana": "くつ",
+            "furigana": [
+                { "char": "靴", "reading": "くつ" }
+            ],
+            "romaji": "kutu"
+        },
+        "hat": {
+            "kanji": "帽子",
+            "kana": "ぼうし",
+            "furigana": [
+                { "char": "帽子", "reading": "ぼうし" }
+            ],
+            "romaji": "bousi"
+        },
+        "socks": {
+            "kanji": "靴下",
+            "kana": "くつした",
+            "furigana": [
+                { "char": "靴下", "reading": "くつした" }
+            ],
+            "romaji": "kutusita"
+        },
+        "coat": {
+            "kanji": "コート",
+            "kana": "コート",
+            "furigana": [],
+            "romaji": "kooto"
+        },
+        "dress": {
+            "kanji": "ドレス",
+            "kana": "ドレス",
+            "furigana": [],
+            "romaji": "doresu"
+        },
+        "skirt": {
+            "kanji": "スカート",
+            "kana": "スカート",
+            "furigana": [],
+            "romaji": "sukaato"
+        },
+        "jacket": {
+            "kanji": "ジャケット",
+            "kana": "ジャケット",
+            "furigana": [],
+            "romaji": "jyaketto"
+        },
+        "boots": {
+            "kanji": "ブーツ",
+            "kana": "ブーツ",
+            "furigana": [],
+            "romaji": "buutsu"
+        },
+        "belt": {
+            "kanji": "ベルト",
+            "kana": "ベルト",
+            "furigana": [],
+            "romaji": "beruto"
+        },
+        "scarf": {
+            "kanji": "マフラー",
+            "kana": "マフラー",
+            "furigana": [],
+            "romaji": "mafuraa"
+        },
+        "gloves": {
+            "kanji": "手袋",
+            "kana": "てぶくろ",
+            "furigana": [
+                { "char": "手袋", "reading": "てぶくろ" }
+            ],
+            "romaji": "tebukuro"
+        },
+        "shorts": {
+            "kanji": "ショーツ",
+            "kana": "ショーツ",
+            "furigana": [],
+            "romaji": "shoatsu"
+        },
+        "pajamas": {
+            "kanji": "パジャマ",
+            "kana": "パジャマ",
+            "furigana": [],
+            "romaji": "pajama"
+        },
+        "sweater": {
+            "kanji": "セーター",
+            "kana": "セーター",
+            "furigana": [],
+            "romaji": "seetaa"
+        },
+
+        "tie": {
+            "kanji": "ネクタイ",
+            "kana": "ネクタイ",
+            "furigana": [],
+            "romaji": "nekutai"
+        },
+        "uniform": {
+            "kanji": "制服",
+            "kana": "せいふく",
+            "furigana": [
+                { "char": "制服", "reading": "せいふく" }
+            ],
+            "romaji": "seifuku"
+        },
+        "hoodie": {
+            "kanji": "パーカー",
+            "kana": "パーカー",
+            "furigana": [],
+            "romaji": "paakaa"
+        },
+        "raincoat": {
+            "kanji": "レインコート",
+            "kana": "レインコート",
+            "furigana": [],
+            "romaji": "reinkooto"
+        },
+        "sandals": {
+            "kanji": "サンダル",
+            "kana": "サンダル",
+            "furigana": [],
+            "romaji": "sandaru"
+        },
+        "sneakers": {
+            "kanji": "スニーカー",
+            "kana": "スニーカー",
+            "furigana": [],
+            "romaji": "suniikaa"
+        },
+        "blouse": {
+            "kanji": "ブラウス",
+            "kana": "ブラウス",
+            "furigana": [],
+            "romaji": "burausu"
+        },
+        "cap": {
+            "kanji": "キャップ",
+            "kana": "キャップ",
+            "furigana": [],
+            "romaji": "kyappu"
+        },
+        "jeans": {
+            "kanji": "ジーンズ",
+            "kana": "ジーンズ",
+            "furigana": [],
+            "romaji": "jiinzu"
+        },
+        "vest": {
+            "kanji": "ベスト",
+            "kana": "ベスト",
+            "furigana": [],
+            "romaji": "besuto"
+        },
+        "leggings": {
+            "kanji": "レギンス",
+            "kana": "レギンス",
+            "furigana": [],
+            "romaji": "reginsu"
+        },
+        "swimsuit": {
+            "kanji": "水着",
+            "kana": "みずぎ",
+            "furigana": [
+                { "char": "水着", "reading": "みずぎ" }
+            ],
+            "romaji": "mizugi"
+        },
+        "slippers": {
+            "kanji": "スリッパ",
+            "kana": "スリッパ",
+            "furigana": [],
+            "romaji": "surippa"
+        },
+        "overalls": {
+            "kanji": "オーバーオール",
+            "kana": "オーバーオール",
+            "furigana": [],
+            "romaji": "oobaaooru"
+        },
+        "sunglasses": {
+            "kanji": "サングラス",
+            "kana": "サングラス",
+            "furigana": [],
+            "romaji": "sangurasu"
+        },
+        "backpack": {
+            "kanji": "バックパック",
+            "kana": "バックパック",
+            "furigana": [],
+            "romaji": "bakkupakku"
+        },
+
+        "kimono": {
+            "kanji": "着物",
+            "kana": "きもの",
+            "furigana": [
+                { "char": "着物", "reading": "きもの" }
+            ],
+            "romaji": "kimono"
+        },
+        "cardigan": {
+            "kanji": "カーディガン",
+            "kana": "カーディガン",
+            "furigana": [],
+            "romaji": "kaadigyan"
+        },
+        "beanie": {
+            "kanji": "ビーニー",
+            "kana": "ビーニー",
+            "furigana": [],
+            "romaji": "biinii"
+        },
+        "trenchcoat": {
+            "kanji": "トレンチコート",
+            "kana": "トレンチコート",
+            "furigana": [],
+            "romaji": "torenchikooto"
+        },
+        "parka": {
+            "kanji": "パーカー",
+            "kana": "パーカー",
+            "furigana": [],
+            "romaji": "paakaa"
+        },
+        "tights": {
+            "kanji": "タイツ",
+            "kana": "タイツ",
+            "furigana": [],
+            "romaji": "taitu"
+        },
+        "loafers": {
+            "kanji": "ローファー",
+            "kana": "ローファー",
+            "furigana": [],
+            "romaji": "roofaa"
+        },
+        "gown": {
+            "kanji": "ガウン",
+            "kana": "ガウン",
+            "furigana": [],
+            "romaji": "gaun"
+        },
+        "tuxedo": {
+            "kanji": "タキシード",
+            "kana": "タキシード",
+            "furigana": [],
+            "romaji": "takisiido"
+        },
+        "helmet": {
+            "kanji": "ヘルメット",
+            "kana": "ヘルメット",
+            "furigana": [],
+            "romaji": "herumetto"
+        },
+        "cloak": {
+            "kanji": "マント",
+            "kana": "マント",
+            "furigana": [],
+            "romaji": "manto"
+        },
+        "poncho": {
+            "kanji": "ポンチョ",
+            "kana": "ポンチョ",
+            "furigana": [],
+            "romaji": "poncho"
+        },
+        "mittens": {
+            "kanji": "ミトン",
+            "kana": "ミトン",
+            "furigana": [],
+            "romaji": "miton"
+        },
+        "wallet": {
+            "kanji": "財布",
+            "kana": "さいふ",
+            "furigana": [
+                { "char": "財布", "reading": "さいふ" }
+            ],
+            "romaji": "saifu"
+        },
+
+        "corset": {
+            "kanji": "コルセット",
+            "kana": "コルセット",
+            "furigana": [],
+            "romaji": "korusetto"
+        },
+        "blazer": {
+            "kanji": "ブレザー",
+            "kana": "ブレザー",
+            "furigana": [],
+            "romaji": "burezâ"
+        },
+        "sash": {
+            "kanji": "サッシュ",
+            "kana": "サッシュ",
+            "furigana": [],
+            "romaji": "sasshu"
+        },
+        "tunic": {
+            "kanji": "チュニック",
+            "kana": "チュニック",
+            "furigana": [],
+            "romaji": "chyunikku"
+        },
+        "robe": {
+            "kanji": "ローブ",
+            "kana": "ローブ",
+            "furigana": [],
+            "romaji": "roobu"
+        },
+        "cufflinks": {
+            "kanji": "カフスボタン",
+            "kana": "カフスボタン",
+            "furigana": [],
+            "romaji": "kafusubotan"
+        },
+        "suspenders": {
+            "kanji": "サスペンダー",
+            "kana": "サスペンダー",
+            "furigana": [],
+            "romaji": "sasupendâ"
+        },
+        "rain-boots": {
+            "kanji": "レインブーツ",
+            "kana": "レインブーツ",
+            "furigana": [],
+            "romaji": "reinbuutsu"
+        },
+        "windbreaker": {
+            "kanji": "ウインドブレーカー",
+            "kana": "ウインドブレーカー",
+            "furigana": [],
+            "romaji": "uindobureekaa"
+        },
+        "fleece": {
+            "kanji": "フリース",
+            "kana": "フリース",
+            "furigana": [],
+            "romaji": "furiisu"
+        },
+        "goggles": {
+            "kanji": "ゴーグル",
+            "kana": "ゴーグル",
+            "furigana": [],
+            "romaji": "googuru"
+        },
+        "armband": {
+            "kanji": "アームバンド",
+            "kana": "アームバンド",
+            "furigana": [],
+            "romaji": "aamubando"
+        },
+        "wristband": {
+            "kanji": "リストバンド",
+            "kana": "リストバンド",
+            "furigana": [],
+            "romaji": "risutobando"
+        },
+        "handbag": {
+            "kanji": "ハンドバッグ",
+            "kana": "ハンドバッグ",
+            "furigana": [],
+            "romaji": "handobaggu"
+        },
+        "satchel": {
+            "kanji": "サッチェルバッグ",
+            "kana": "サッチェルバッグ",
+            "furigana": [],
+            "romaji": "saccherubaggu"
+        },
+        "messenger-bag": {
+            "kanji": "メッセンジャーバッグ",
+            "kana": "メッセンジャーバッグ",
+            "furigana": [],
+            "romaji": "messenzyaa baggu"
+        },
+
+        "kimono-obi": {
+            "kanji": "帯",
+            "kana": "おび",
+            "furigana": [
+                { "char": "帯", "reading": "おび" }
+            ],
+            "romaji": "obi"
+        },
+        "haori": {
+            "kanji": "羽織",
+            "kana": "はおり",
+            "furigana": [
+                { "char": "羽織", "reading": "はおり" }
+            ],
+            "romaji": "haori"
+        },
+        "fedora": {
+            "kanji": "フェドラハット",
+            "kana": "フェドラハット",
+            "furigana": [],
+            "romaji": "fedorahatto"
+        },
+        "brooch": {
+            "kanji": "ブローチ",
+            "kana": "ブローチ",
+            "furigana": [],
+            "romaji": "buroochi"
+        },
+        "ascot": {
+            "kanji": "アスコットタイ",
+            "kana": "アスコットタイ",
+            "furigana": [],
+            "romaji": "asukottotai"
+        },
+        "velvet-coat": {
+            "kanji": "ベルベットコート",
+            "kana": "ベルベットコート",
+            "furigana": [],
+            "romaji": "berubetto kooto"
+        },
+        "leather-jacket": {
+            "kanji": "レザージャケット",
+            "kana": "レザージャケット",
+            "furigana": [],
+            "romaji": "rezaa jyaketto"
+        },
+        "trench-boots": {
+            "kanji": "トレンチブーツ",
+            "kana": "トレンチブーツ",
+            "furigana": [],
+            "romaji": "torenchibuutsu"
+        },
+        "moccasins": {
+            "kanji": "モカシン",
+            "kana": "モカシン",
+            "furigana": [],
+            "romaji": "mokasin"
+        },
+        "linen-suit": {
+            "kanji": "リネンスーツ",
+            "kana": "リネンスーツ",
+            "furigana": [],
+            "romaji": "rinensuutsu"
+        },
+        "tailored-vest": {
+            "kanji": "テーラードベスト",
+            "kana": "テーラードベスト",
+            "furigana": [],
+            "romaji": "teeraado besuto"
+        },
+        "embroidered-scarf": {
+            "kanji": "刺繍スカーフ",
+            "kana": "ししゅうスカーフ",
+            "furigana": [
+                { "char": "刺繍", "reading": "ししゅう" },
+                { "char": "スカーフ", "reading": null }
+            ],
+            "romaji": "sisyyuu sukaafu"
+        },
+        "silk-robe": {
+            "kanji": "シルクローブ",
+            "kana": "シルクローブ",
+            "furigana": [],
+            "romaji": "siruku roobu"
+        },
+        "fur-coat": {
+            "kanji": "ファーコート",
+            "kana": "ファーコート",
+            "furigana": [],
+            "romaji": "faa kooto"
+        },
+        "oxford-shoes": {
+            "kanji": "オックスフォードシューズ",
+            "kana": "オックスフォードシューズ",
+            "furigana": [],
+            "romaji": "okkusufoodo syuuzu"
+        },
+        "derby-shoes": {
+            "kanji": "ダービーシューズ",
+            "kana": "ダービーシューズ",
+            "furigana": [],
+            "romaji": "daabii syuuzu"
+        },
+
+        "head": {
+            "kanji": "頭",
+            "kana": "あたま",
+            "furigana": [
+                { "char": "頭", "reading": "あたま" }
+            ],
+            "romaji": "atama"
+        },
+        "eyes": {
+            "kanji": "目",
+            "kana": "め",
+            "furigana": [
+                { "char": "目", "reading": "め" }
+            ],
+            "romaji": "me"
+        },
+        "nose": {
+            "kanji": "鼻",
+            "kana": "はな",
+            "furigana": [
+                { "char": "鼻", "reading": "はな" }
+            ],
+            "romaji": "hana"
+        },
+        "mouth": {
+            "kanji": "口",
+            "kana": "くち",
+            "furigana": [
+                { "char": "口", "reading": "くち" }
+            ],
+            "romaji": "kuti"
+        },
+        "ear": {
+            "kanji": "耳",
+            "kana": "みみ",
+            "furigana": [
+                { "char": "耳", "reading": "みみ" }
+            ],
+            "romaji": "mimi"
+        },
+        "hand": {
+            "kanji": "手",
+            "kana": "て",
+            "furigana": [
+                { "char": "手", "reading": "て" }
+            ],
+            "romaji": "te"
+        },
+        "arm": {
+            "kanji": "腕",
+            "kana": "うで",
+            "furigana": [
+                { "char": "腕", "reading": "うで" }
+            ],
+            "romaji": "ude"
+        },
+        "leg": {
+            "kanji": "脚",
+            "kana": "あし",
+            "furigana": [
+                { "char": "脚", "reading": "あし" }
+            ],
+            "romaji": "asi"
+        },
+        "foot": {
+            "kanji": "足",
+            "kana": "あし",
+            "furigana": [
+                { "char": "足", "reading": "あし" }
+            ],
+            "romaji": "asi"
+        },
+        "finger": {
+            "kanji": "指",
+            "kana": "ゆび",
+            "furigana": [
+                { "char": "指", "reading": "ゆび" }
+            ],
+            "romaji": "yubi"
+        },
+        "hair": {
+            "kanji": "髪",
+            "kana": "かみ",
+            "furigana": [
+                { "char": "髪", "reading": "かみ" }
+            ],
+            "romaji": "kami"
+        },
+        "face": {
+            "kanji": "顔",
+            "kana": "かお",
+            "furigana": [
+                { "char": "顔", "reading": "かお" }
+            ],
+            "romaji": "kao"
+        },
+        "neck": {
+            "kanji": "首",
+            "kana": "くび",
+            "furigana": [
+                { "char": "首", "reading": "くび" }
+            ],
+            "romaji": "kubi"
+        },
+        "back": {
+            "kanji": "背中",
+            "kana": "せなか",
+            "furigana": [
+                { "char": "背中", "reading": "せなか" }
+            ],
+            "romaji": "senaka"
+        },
+        "knee": {
+            "kanji": "膝",
+            "kana": "ひざ",
+            "furigana": [
+                { "char": "膝", "reading": "ひざ" }
+            ],
+            "romaji": "hiza"
+        },
+        "toe": {
+            "kanji": "つま先",
+            "kana": "つまさき",
+            "furigana": [
+                { "char": "つま", "reading": null },
+                { "char": "先", "reading": "さき" }
+            ],
+            "romaji": "tumasaki"
+        },
+
+        "shoulder": {
+            "kanji": "肩",
+            "kana": "かた",
+            "furigana": [
+                { "char": "肩", "reading": "かた" }
+            ],
+            "romaji": "kata"
+        },
+        "elbow": {
+            "kanji": "肘",
+            "kana": "ひじ",
+            "furigana": [
+                { "char": "肘", "reading": "ひじ" }
+            ],
+            "romaji": "hizi"
+        },
+        "wrist": {
+            "kanji": "手首",
+            "kana": "てくび",
+            "furigana": [
+                { "char": "手首", "reading": "てくび" }
+            ],
+            "romaji": "tekubi"
+        },
+        "ankle": {
+            "kanji": "足首",
+            "kana": "あしくび",
+            "furigana": [
+                { "char": "足首", "reading": "あしくび" }
+            ],
+            "romaji": "asikubi"
+        },
+        "chest": {
+            "kanji": "胸",
+            "kana": "むね",
+            "furigana": [
+                { "char": "胸", "reading": "むね" }
+            ],
+            "romaji": "mune"
+        },
+        "stomach": {
+            "kanji": "おなか",
+            "kana": "おなか",
+            "furigana": [],
+            "romaji": "onaka"
+        },
+        "hip": {
+            "kanji": "腰",
+            "kana": "こし",
+            "furigana": [
+                { "char": "腰", "reading": "こし" }
+            ],
+            "romaji": "kosi"
+        },
+        "thumb": {
+            "kanji": "親指",
+            "kana": "おやゆび",
+            "furigana": [
+                { "char": "親指", "reading": "おやゆび" }
+            ],
+            "romaji": "oyayubi"
+        },
+        "palm": {
+            "kanji": "手のひら",
+            "kana": "てのひら",
+            "furigana": [],
+            "romaji": "tenohira"
+        },
+        "forehead": {
+            "kanji": "額",
+            "kana": "ひたい",
+            "furigana": [
+                { "char": "額", "reading": "ひたい" }
+            ],
+            "romaji": "hitai"
+        },
+        "chin": {
+            "kanji": "あご",
+            "kana": "あご",
+            "furigana": [],
+            "romaji": "ago"
+        },
+        "cheek": {
+            "kanji": "頬",
+            "kana": "ほお",
+            "furigana": [
+                { "char": "頬", "reading": "ほお" }
+            ],
+            "romaji": "hoo"
+        },
+        "thigh": {
+            "kanji": "太もも",
+            "kana": "ふともも",
+            "furigana": [
+                { "char": "太", "reading": "ふと" },
+                { "char": "もも", "reading": null }
+            ],
+            "romaji": "futomo mo"
+        },
+        "heel": {
+            "kanji": "かかと",
+            "kana": "かかと",
+            "furigana": [],
+            "romaji": "kakato"
+        },
+        "rib": {
+            "kanji": "肋骨",
+            "kana": "ろっこつ",
+            "furigana": [
+                { "char": "肋骨", "reading": "ろっこつ" }
+            ],
+            "romaji": "rokkotu"
+        },
+        "lung": {
+            "kanji": "肺",
+            "kana": "はい",
+            "furigana": [
+                { "char": "肺", "reading": "はい" }
+            ],
+            "romaji": "hai"
+        },
+
+        "intestine": {
+            "kanji": "腸",
+            "kana": "ちょう",
+            "furigana": [
+                { "char": "腸", "reading": "ちょう" }
+            ],
+            "romaji": "chou"
+        },
+        "muscle": {
+            "kanji": "筋肉",
+            "kana": "きんにく",
+            "furigana": [
+                { "char": "筋肉", "reading": "きんにく" }
+            ],
+            "romaji": "kinniku"
+        },
+        "bone": {
+            "kanji": "骨",
+            "kana": "ほね",
+            "furigana": [
+                { "char": "骨", "reading": "ほね" }
+            ],
+            "romaji": "hone"
+        },
+        "skull": {
+            "kanji": "頭骨",
+            "kana": "とうこつ",
+            "furigana": [
+                { "char": "頭骨", "reading": "とうこつ" }
+            ],
+            "romaji": "toukotu"
+        },
+        "spine": {
+            "kanji": "背骨",
+            "kana": "せぼね",
+            "furigana": [
+                { "char": "背骨", "reading": "せぼね" }
+            ],
+            "romaji": "sebune"
+        },
+        "jaw": {
+            "kanji": "顎",
+            "kana": "あご",
+            "furigana": [
+                { "char": "顎", "reading": "あご" }
+            ],
+            "romaji": "ago"
+        },
+        "liver": {
+            "kanji": "肝臓",
+            "kana": "かんぞう",
+            "furigana": [
+                { "char": "肝臓", "reading": "かんぞう" }
+            ],
+            "romaji": "kanzou"
+        },
+        "kidney": {
+            "kanji": "腎臓",
+            "kana": "じんぞう",
+            "furigana": [
+                { "char": "腎臓", "reading": "じんぞう" }
+            ],
+            "romaji": "jinzou"
+        },
+        "heart": {
+            "kanji": "心臓",
+            "kana": "しんぞう",
+            "furigana": [
+                { "char": "心臓", "reading": "しんぞう" }
+            ],
+            "romaji": "sinzou"
+        },
+        "vein": {
+            "kanji": "静脈",
+            "kana": "じょうみゃく",
+            "furigana": [
+                { "char": "静脈", "reading": "じょうみゃく" }
+            ],
+            "romaji": "joumyaku"
+        },
+        "artery": {
+            "kanji": "動脈",
+            "kana": "どうみゃく",
+            "furigana": [
+                { "char": "動脈", "reading": "どうみゃく" }
+            ],
+            "romaji": "doumyaku"
+        },
+        "joint": {
+            "kanji": "関節",
+            "kana": "かんせつ",
+            "furigana": [
+                { "char": "関節", "reading": "かんせつ" }
+            ],
+            "romaji": "kansetu"
+        },
+        "nerve": {
+            "kanji": "神経",
+            "kana": "しんけい",
+            "furigana": [
+                { "char": "神経", "reading": "しんけい" }
+            ],
+            "romaji": "sinkei"
+        },
+        "spleen": {
+            "kanji": "脾臓",
+            "kana": "ひぞう",
+            "furigana": [
+                { "char": "脾臓", "reading": "ひぞう" }
+            ],
+            "romaji": "hizou"
+        },
+        "tendon": {
+            "kanji": "腱",
+            "kana": "けん",
+            "furigana": [
+                { "char": "腱", "reading": "けん" }
+            ],
+            "romaji": "ken"
+        },
+        "brain": {
+            "kanji": "脳",
+            "kana": "のう",
+            "furigana": [
+                { "char": "脳", "reading": "のう" }
+            ],
+            "romaji": "nou"
+        },
+
+        "larynx": {
+            "kanji": "喉頭",
+            "kana": "こうとう",
+            "furigana": [
+                { "char": "喉頭", "reading": "こうとう" }
+            ],
+            "romaji": "koutou"
+        },
+        "pharynx": {
+            "kanji": "咽頭",
+            "kana": "いんとう",
+            "furigana": [
+                { "char": "咽頭", "reading": "いんとう" }
+            ],
+            "romaji": "intou"
+        },
+        "pelvis": {
+            "kanji": "骨盤",
+            "kana": "こつばん",
+            "furigana": [
+                { "char": "骨盤", "reading": "こつばん" }
+            ],
+            "romaji": "kotuban"
+        },
+        "diaphragm": {
+            "kanji": "横隔膜",
+            "kana": "おうかくまく",
+            "furigana": [
+                { "char": "横隔膜", "reading": "おうかくまく" }
+            ],
+            "romaji": "oukakumaku"
+        },
+        "marrow": {
+            "kanji": "骨髄",
+            "kana": "こつずい",
+            "furigana": [
+                { "char": "骨髄", "reading": "こつずい" }
+            ],
+            "romaji": "kotuzui"
+        },
+        "cartilage": {
+            "kanji": "軟骨",
+            "kana": "なんこつ",
+            "furigana": [
+                { "char": "軟骨", "reading": "なんこつ" }
+            ],
+            "romaji": "nankotu"
+        },
+        "cortex": {
+            "kanji": "皮質",
+            "kana": "ひしつ",
+            "furigana": [
+                { "char": "皮質", "reading": "ひしつ" }
+            ],
+            "romaji": "hisitu"
+        },
+        "aorta": {
+            "kanji": "大動脈",
+            "kana": "だいどうみゃく",
+            "furigana": [
+                { "char": "大動脈", "reading": "だいどうみゃく" }
+            ],
+            "romaji": "daidoumyaku"
+        },
+        "retina": {
+            "kanji": "網膜",
+            "kana": "もうまく",
+            "furigana": [
+                { "char": "網膜", "reading": "もうまく" }
+            ],
+            "romaji": "moumaku"
+        },
+        "cornea": {
+            "kanji": "角膜",
+            "kana": "かくまく",
+            "furigana": [
+                { "char": "角膜", "reading": "かくまく" }
+            ],
+            "romaji": "kakumaku"
+        },
+        "ligament": {
+            "kanji": "靭帯",
+            "kana": "じんたい",
+            "furigana": [
+                { "char": "靭帯", "reading": "じんたい" }
+            ],
+            "romaji": "jintai"
+        },
+        "abdomen": {
+            "kanji": "腹部",
+            "kana": "ふくぶ",
+            "furigana": [
+                { "char": "腹部", "reading": "ふくぶ" }
+            ],
+            "romaji": "hukubu"
+        },
+        "trachea": {
+            "kanji": "気管",
+            "kana": "きかん",
+            "furigana": [
+                { "char": "気管", "reading": "きかん" }
+            ],
+            "romaji": "kikan"
+        },
+        "bronchi": {
+            "kanji": "気管支",
+            "kana": "きかんし",
+            "furigana": [
+                { "char": "気管支", "reading": "きかんし" }
+            ],
+            "romaji": "kikansi"
+        },
+        "uterus": {
+            "kanji": "子宮",
+            "kana": "しきゅう",
+            "furigana": [
+                { "char": "子宮", "reading": "しきゅう" }
+            ],
+            "romaji": "sikyuu"
+        },
+        "prostate": {
+            "kanji": "前立腺",
+            "kana": "ぜんりつせん",
+            "furigana": [
+                { "char": "前立腺", "reading": "ぜんりつせん" }
+            ],
+            "romaji": "zenritusen"
+        },
+
+        "cerebellum": {
+            "kanji": "小脳",
+            "kana": "しょうのう",
+            "furigana": [
+                { "char": "小脳", "reading": "しょうのう" }
+            ],
+            "romaji": "shounou"
+        },
+        "hippocampus": {
+            "kanji": "海馬",
+            "kana": "かいば",
+            "furigana": [
+                { "char": "海馬", "reading": "かいば" }
+            ],
+            "romaji": "kaiba"
+        },
+        "medulla": {
+            "kanji": "延髄",
+            "kana": "えんずい",
+            "furigana": [
+                { "char": "延髄", "reading": "えんずい" }
+            ],
+            "romaji": "enzui"
+        },
+        "pituitary-gland": {
+            "kanji": "下垂体",
+            "kana": "かすいたい",
+            "furigana": [
+                { "char": "下垂体", "reading": "かすいたい" }
+            ],
+            "romaji": "kasuitai"
+        },
+        "hypothalamus": {
+            "kanji": "視床下部",
+            "kana": "ししょうかぶ",
+            "furigana": [
+                { "char": "視床下部", "reading": "ししょうかぶ" }
+            ],
+            "romaji": "sisyookabu"
+        },
+        "lymph-node": {
+            "kanji": "リンパ節",
+            "kana": "リンパせつ",
+            "furigana": [
+                { "char": "リンパ", "reading": null },
+                { "char": "節", "reading": "せつ" }
+            ],
+            "romaji": "rinpasetu"
+        },
+        "diaphragm-muscle": {
+            "kanji": "横隔膜筋",
+            "kana": "おうかくまくきん",
+            "furigana": [
+                { "char": "横隔膜", "reading": "おうかくまく" },
+                { "char": "筋", "reading": "きん" }
+            ],
+            "romaji": "oukakumakukin"
+        },
+        "esophagus": {
+            "kanji": "食道",
+            "kana": "しょくどう",
+            "furigana": [
+                { "char": "食道", "reading": "しょくどう" }
+            ],
+            "romaji": "syokudou"
+        },
+        "cochlea": {
+            "kanji": "蝸牛",
+            "kana": "かぎゅう",
+            "furigana": [
+                { "char": "蝸牛", "reading": "かぎゅう" }
+            ],
+            "romaji": "kagyuu"
+        },
+        "cornea-membrane": {
+            "kanji": "角膜上皮",
+            "kana": "かくまくじょうひ",
+            "furigana": [
+                { "char": "角膜", "reading": "かくまく" },
+                { "char": "上皮", "reading": "じょうひ" }
+            ],
+            "romaji": "kakumaku jouhi"
+        },
+        "endocrine-gland": {
+            "kanji": "内分泌腺",
+            "kana": "ないぶんぴつせん",
+            "furigana": [
+                { "char": "内分泌腺", "reading": "ないぶんぴつせん" }
+            ],
+            "romaji": "naibunpitusen"
+        },
+        "adrenal-gland": {
+            "kanji": "副腎",
+            "kana": "ふくじん",
+            "furigana": [
+                { "char": "副腎", "reading": "ふくじん" }
+            ],
+            "romaji": "hukuzin"
+        },
+        "pancreas": {
+            "kanji": "膵臓",
+            "kana": "すいぞう",
+            "furigana": [
+                { "char": "膵臓", "reading": "すいぞう" }
+            ],
+            "romaji": "suizou"
+        },
+        "cerebrum": {
+            "kanji": "大脳",
+            "kana": "だいのう",
+            "furigana": [
+                { "char": "大脳", "reading": "だいのう" }
+            ],
+            "romaji": "dainou"
+        },
+        "cerebellar-cortex": {
+            "kanji": "小脳皮質",
+            "kana": "しょうのうひしつ",
+            "furigana": [
+                { "char": "小脳", "reading": "しょうのう" },
+                { "char": "皮質", "reading": "ひしつ" }
+            ],
+            "romaji": "shounou hisitu"
+        },
+        "spinal-cord": {
+            "kanji": "脊髄",
+            "kana": "せきずい",
+            "furigana": [
+                { "char": "脊髄", "reading": "せきずい" }
+            ],
+            "romaji": "sekizui"
         }
     }
 }
