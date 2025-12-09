@@ -81,9 +81,9 @@
             "id": "technology",
             "name": "Technology",
             "levels": [
-                { "level1": [ "computer", "phone", "mouse-pc", "keyboard", "screen", "cable", "battery", "camera", "clock", "speaker", "printer", "radio", "tablet", "charger", "gamepad", "laptop" ] },
+                { "level1": [ "computer", "cellphone", "mouse-pc", "keyboard", "screen", "cable", "battery", "camera", "clock", "speaker", "printer", "radio", "tablet", "charger", "gamepad", "laptop" ] },
                 { "level2": [ "router", "server", "modem", "joystick", "projector", "console", "headset", "microphone", "usb-drive", "memory-card", "monitor", "power-bank", "stylus", "hard-drive", "scanner", "smartwatch" ] },
-                { "level3": [ "processor", "graphics-card", "motherboard", "ram", "ssd", "operating-system", "app", "database", "wifi-signal", "firewall", "browser", "cloud", "ai-model", "algorithm", "sensor", "drone" ] },
+                { "level3": [ "processor", "graphics-card", "motherboard", "ram", "ssd", "operating-system", "app", "database", "wifi-signal", "firewall", "browser", "cloud-web", "ai-model", "algorithm", "sensor", "drone" ] },
                 { "level4": [ "encryption", "virtualization", "compiler", "framework", "protocol", "neural-network", "blockchain", "automation", "firmware", "robotics", "distributed-system", "api-gateway", "microcontroller", "quantum-bit", "thermal-paste", "architecture" ] },
                 { "level5": [ "tensor-core", "photolithography", "quantum-computing", "superconductivity", "nanotechnology", "machine-vision", "autonomous-control", "genetic-algorithm", "edge-computing", "deep-learning", "electromagnetic-shielding", "optical-encoder", "lidar-array", "rfid-matrix", "meta-learning", "neuromorphic-chip" ] }
             ]

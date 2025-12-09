@@ -1,18 +1,18 @@
-async function testLanguages(){
+async function testLanguages(showMissing = true){
     const categories = [ 
         "animals", "food-drinks", "clothing", "body-parts", "household", 
         "nature", "travel", "technology", "abstract", "verbs" 
     ];
     
-    console.log(await testLanguage("en", categories));
-    console.log(await testLanguage("es", categories));
-
-    // Just animals, because the dictionary isn't finished
-    console.log(await testLanguage("jp", categories));
+    console.log(await testLanguage("en", categories, showMissing));
+    console.log(await testLanguage("es", categories, showMissing));
+    console.log(await testLanguage("jp", categories, showMissing));
+    console.log(await testLanguage("it", categories, showMissing));
+    console.log(await testLanguage("de", categories, showMissing));
 }
 
 
-async function testLanguage(language, categories){
+async function testLanguage(language, categories, showMissing){
     let summary = `---> Testing ${language} <---\n`;
 
     for (const categoryId of categories){
@@ -24,7 +24,7 @@ async function testLanguage(language, categories){
                 break;
             case OutputState.MISSING:
                 summary += `${categoryId}: \x1b[33mTEST FAILED [${result.found}/${result.total}]\x1b[0m`;
-                if (result.missing.length > 0) {
+                if (showMissing && result.missing.length > 0) {
                     summary += ` | Missing: ${result.missing.join(", ")}`;
                 }
                 break;
