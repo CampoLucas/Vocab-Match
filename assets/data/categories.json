@@ -1,0 +1,114 @@
+{
+    "categories": [
+        {
+            "id": "animals",
+            "name": "Animals",
+            "levels": [
+                { "level1": [ "cat", "dog", "bird", "fish", "cow", "pig", "horse", "sheep", "chicken", "duck", "mouse", "goat", "frog", "rabbit", "bee", "ant" ] },
+                { "level2": [ "fox", "wolf", "bear", "deer", "turtle", "snake", "eagle", "hawk", "owl", "shark", "whale", "dolphin", "camel", "monkey", "crab", "spider" ] },
+                { "level3": [ "leopard", "jaguar", "panther", "buffalo", "hedgehog", "beaver", "octopus", "squid", "jellyfish", "falcon", "vulture", "lizard", "otter", "penguin", "seal", "rhino" ] },
+                { "level4": [ "wombat", "platypus", "lynx", "gazelle", "meerkat", "stingray", "piranha", "flamingo", "toucan", "manta", "walrus", "hyena", "coyote", "chameleon", "baboon", "scorpion" ] },
+                { "level5": [ "okapi", "axolotl", "narwhal", "echidna", "oryx", "ibex", "muskox", "cassowary", "pelican", "sardine", "tarantula", "anemone", "armadillo", "mongoose", "barracuda", "weasel" ] }
+            ]
+        },
+        {
+            "id": "food-drinks",
+            "name": "Food & Drinks",
+            "lavels": [
+                { "level1": [ "bread", "milk", "water", "rice", "apple", "banana", "egg", "cheese", "meat", "butter", "soup", "pasta", "carrot", "potato", "tea", "coffee" ] },
+                { "level2": [ "orange", "grape", "strawberry", "lettuce", "onion", "garlic", "chicken-food", "beef", "yogurt", "juice", "cake", "cookie", "cereal", "salt", "sugar", "pepper" ] },
+                { "level3": [ "broccoli", "mushroom", "pineapple", "watermelon", "avocado", "tomato", "cucumber", "shrimp", "salmon", "olive", "honey", "jam", "sandwich", "noodles", "taco", "chocolate" ] },
+                { "level4": [ "spinach", "cabbage", "zucchini", "berries", "almond", "walnut", "sausage", "curry", "stew", "burrito", "sushi", "dumpling", "vinegar", "mustard", "cinnamon", "ginger" ] },
+                { "level5": [ "quinoa", "chickpeas", "lentils", "espresso", "truffle", "anchovy", "saffron", "oyster", "scallop", "basil", "rosemary", "thyme", "paprika", "miso", "kombucha", "kefir" ] }
+            ]
+        },
+        {
+            "id": "clothing",
+            "name": "Clothing",
+            "lavels": [
+                { "level1": [ "shirt", "pants", "shoes", "hat", "socks", "coat", "dress", "skirt", "jacket", "boots", "belt", "scarf", "gloves", "shorts", "pajamas", "sweater" ] },
+                { "level2": [ "tie", "uniform", "hoodie", "raincoat", "sandals", "sneakers", "blouse", "cap", "jeans", "vest", "leggings", "swimsuit", "slippers", "overalls", "sunglasses", "backpack" ] },
+                { "level3": [ "kimono", "cardigan", "beanie", "boots", "trenchcoat", "parka", "tights", "loafers", "gown", "tuxedo", "helmet", "cloak", "poncho", "gloves", "mittens", "wallet" ] },
+                { "level4": [ "corset", "blazer", "sash", "tunic", "robe", "cufflinks", "suspenders", "rain-boots", "windbreaker", "fleece", "goggles", "armband", "wristband", "handbag", "satchel", "messenger-bag" ] },
+                { "level5": [ "kimono-obi", "haori", "fedora", "brooch", "ascot", "velvet-coat", "leather-jacket", "trench-boots", "moccasins", "linen-suit", "tailored-vest", "embroidered-scarf", "silk-robe", "fur-coat", "oxford-shoes", "derby-shoes" ] }
+            ]
+        },
+        {
+            "id": "body-parts",
+            "name": "Body Parts",
+            "lavels": [
+                { "level1": [ "head", "eyes", "nose", "mouth", "ear", "hand", "arm", "leg", "foot", "finger", "hair", "face", "neck", "back", "knee", "toe" ] },
+                { "level2": [ "shoulder", "elbow", "wrist", "ankle", "chest", "stomach", "hip", "thumb", "palm", "forehead", "chin", "cheek", "thigh", "heel", "rib", "lung" ] },
+                { "level3": [ "intestine", "muscle", "bone", "skull", "spine", "jaw", "liver", "kidney", "heart", "vein", "artery", "joint", "nerve", "spleen", "tendon", "brain" ] },
+                { "level4": [ "larynx", "pharynx", "pelvis", "diaphragm", "marrow", "cartilage", "cortex", "aorta", "retina", "cornea", "ligament", "abdomen", "trachea", "bronchi", "uterus", "prostate" ] },
+                { "level5": [ "cerebellum", "hippocampus", "medulla", "pituitary-gland", "hypothalamus", "lymph-node", "diaphragm-muscle", "esophagus", "cochlea", "cornea-membrane", "endocrine-gland", "adrenal-gland", "pancreas", "cerebrum", "cerebellar-cortex", "spinal-cord" ] }
+            ]
+        },
+        {
+            "id": "household",
+            "name": "Household",
+            "lavels": [
+                { "level1": [ "chair", "table", "bed", "door", "window", "lamp", "cup", "plate", "spoon", "fork", "knife", "pillow", "blanket", "clock", "phone", "TV" ] },
+                { "level2": [ "sofa", "mirror", "desk", "shelf", "curtain", "bottle", "towel", "oven", "stove", "fridge", "trash-can", "broom", "brush", "candle", "fan", "microwave" ] },
+                { "level3": [ "washing-machine", "vacuum", "heater", "charger", "keyboard", "monitor", "drawer", "cabinet", "mirror", "mattress", "cushion", "toolbox", "hammer", "screwdriver", "pliers", "basket" ] },
+                { "level4": [ "thermostat", "router", "blender", "humidifier", "dehumidifier", "extension-cord", "power-strip", "bookshelf", "faucet", "pipe", "remote-control", "sewing-machine", "toolkit", "measuring-cup", "whisk", "kettle" ] },
+                { "level5": [ "oscilloscope", "multimeter", "surge-protector", "circuit-board", "ethernet-switch", "modem", "home-server", "projector", "soldering-iron", "loft-bed", "futon-frame", "ceramic-vase", "induction-stove", "cast-iron-pan", "espresso-machine", "air-purifier" ] }
+            ]
+        },
+        {
+            "id": "nature",
+            "name": "Nature / Weather",
+            "lavels": [
+                { "level1": [ "sun", "moon", "rain", "snow", "wind", "cloud", "tree", "flower", "rock", "river", "mountain", "beach", "lake", "forest", "leaf", "sky" ] },
+                { "level2": [ "storm", "thunder", "lightning", "fog", "mist", "soil", "sand", "valley", "hill", "island", "desert", "waterfall", "wave", "tide", "breeze", "frost" ] },
+                { "level3": [ "hurricane", "tornado", "blizzard", "monsoon", "drought", "glacier", "canyon", "volcano", "eclipse", "meadow", "reef", "dune", "cliff", "avalanche", "geyser", "swamp" ] },
+                { "level4": [ "atmosphere", "humidity", "pressure", "erosion", "sediment", "ecosystem", "habitat", "tundra", "savanna", "rainforest", "geyser-basin", "magma-chamber", "seismic-wave", "tectonic-plate", "permafrost", "biosphere" ] },
+                { "level5": [ "stratosphere", "mesosphere", "thermosphere", "lithosphere", "hydrosphere", "troposphere", "cumulonimbus", "cirrostratus", "geomagnetism", "paleoclimate", "cryosphere", "antimatter", "astrobiology", "thermodynamics", "aurora", "ionosphere" ] }
+            ]
+        },
+        {
+            "id": "travel",
+            "name": "Travel & Places",
+            "lavels": [
+                { "level1": [ "school", "house", "park", "store", "street", "city", "bus", "car", "train", "airport", "hotel", "bank", "bridge", "restaurant", "station", "road" ] },
+                { "level2": [ "hospital", "museum", "library", "market", "mall", "subway", "police-station", "gas-station", "beach-resort", "village", "office", "factory", "farm", "port", "stadium", "temple" ] },
+                { "level3": [ "embassy", "university", "laboratory", "courthouse", "harbor", "observatory", "arena", "campsite", "monument", "post-office", "bakery", "pharmacy", "clinic", "dormitory", "suburb", "hostel" ] },
+                { "level4": [ "cathedral", "sanctuary", "bazaar", "district", "headquarters", "border-checkpoint", "consulate", "greenhouse", "lighthouse", "industrial-zone", "botanical-garden", "fortress", "citadel", "metro-line", "terminal", "customs" ] },
+                { "level5": [ "archipelago", "peninsula", "isthmus", "plateau", "metropolis", "megacity", "infrastructure-hub", "geothermal-plant", "international-terminal", "consular-building", "reef-station", "hydropower-facility", "satellite-town", "free-trade-zone", "diplomatic-sector", "biosphere-reserve" ] }
+            ]
+        },
+        {
+            "id": "technology",
+            "name": "Technology",
+            "lavels": [
+                { "level1": [ "computer", "phone", "mouse-pc", "keyboard", "screen", "cable", "battery", "camera", "clock", "speaker", "printer", "radio", "tablet", "charger", "gamepad", "laptop" ] },
+                { "level2": [ "router", "server", "modem", "joystick", "projector", "console", "headset", "microphone", "usb-drive", "memory-card", "monitor", "power-bank", "stylus", "hard-drive", "scanner", "smartwatch" ] },
+                { "level3": [ "processor", "graphics-card", "motherboard", "ram", "ssd", "operating-system", "app", "database", "wifi-signal", "firewall", "browser", "cloud", "ai-model", "algorithm", "sensor", "drone" ] },
+                { "level4": [ "encryption", "virtualization", "compiler", "framework", "protocol", "neural-network", "blockchain", "automation", "firmware", "robotics", "distributed-system", "api-gateway", "microcontroller", "quantum-bit", "thermal-paste", "architecture" ] },
+                { "level5": [ "tensor-core", "photolithography", "quantum-computing", "superconductivity", "nanotechnology", "machine-vision", "autonomous-control", "genetic-algorithm", "edge-computing", "deep-learning", "electromagnetic-shielding", "optical-encoder", "lidar-array", "rfid-matrix", "meta-learning", "neuromorphic-chip" ] }
+            ]
+        },
+        {
+            "id": "abstract",
+            "name": "Abstract",
+            "lavels": [
+                { "level1": [ "love", "hate", "time", "day", "night", "light", "dark", "good", "bad", "happy", "sad", "big", "small", "easy", "hard", "wrong" ] },
+                { "level2": [ "strength", "courage", "fear", "hope", "trust", "anger", "pride", "peace", "chaos", "beauty", "truth", "lie", "luck", "choice", "chance", "fate" ] },
+                { "level3": [ "justice", "freedom", "equality", "belief", "culture", "memory", "habit", "pattern", "goal", "challenge", "effort", "method", "doubt", "logic", "reason", "failure" ] },
+                { "level4": [ "philosophy", "identity", "morality", "responsibility", "ambition", "strategy", "perception", "expectation", "tradition", "intuition", "ideology", "ethics", "principle", "influence", "awareness", "motivation" ] },
+                { "level5": [ "existentialism", "determinism", "duality", "cognition", "consciousness", "absurdism", "altruism", "relativism", "empirical-truth", "epistemology", "metaphysics", "ontology", "autonomy", "synergy", "transcendence", "phenomenology" ] }
+            ]
+        },
+        {
+            "id": "verbs",
+            "name": "Verbs",
+            "lavels": [
+                { "level1": [ "eat", "drink", "sleep", "walk", "run", "sit", "stand", "read", "write", "talk", "jump", "swim", "open", "close", "look", "listen" ] },
+                { "level2": [ "cook", "drive", "ride", "climb", "push", "pull", "carry", "cut", "draw", "wash", "clean", "throw", "catch", "shoot", "build", "break" ] },
+                { "level3": [ "decide", "choose", "compare", "explain", "describe", "discover", "imagine", "create", "improve", "repair", "measure", "translate", "memorize", "rotate", "signal", "travel" ] },
+                { "level4": [ "negotiate", "analyze", "evaluate", "prioritize", "cooperate", "operate", "calibrate", "manipulate", "synchronize", "stabilize", "improvise", "interpret", "verify", "restructure", "adapt", "optimize" ] },
+                { "level5": [ "theorize", "conceptualize", "standardize", "automate", "decentralize", "authenticate", "diagnose", "simulate", "configure", "innovate", "speculate", "delegate", "consolidate", "orchestrate", "parameterize", "extrapolate" ] }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,583 @@
+{
+    "lang": "jp",
+    "translations": {
+        "cat": {
+            "kanji": "猫",
+            "kana": "ねこ",
+            "furigana": [
+                { "char": "猫", "reading": "ねこ" }
+            ],
+            "romaji": "neko"
+        },
+        "dog": {
+            "kanji": "犬",
+            "kana": "いぬ",
+            "furigana": [
+                { "char": "犬", "reading": "いぬ" }
+            ],
+            "romaji": "inu"
+        },
+        "bird": {
+            "kanji": "鳥",
+            "kana": "とり",
+            "furigana": [
+                { "char": "鳥", "reading": "とり" }
+            ],
+            "romaji": "tori"
+        },
+        "fish": {
+            "kanji": "魚",
+            "kana": "さかな",
+            "furigana": [
+                { "char": "魚", "reading": "さかな" }
+            ],
+            "romaji": "sakana"
+        },
+        "cow": {
+            "kanji": "牛",
+            "kana": "うし",
+            "furigana": [
+                { "char": "牛", "reading": "うし" }
+            ],
+            "romaji": "usi"
+        },
+        "pig": {
+            "kanji": "豚",
+            "kana": "ぶた",
+            "furigana": [
+                { "char": "豚", "reading": "ぶた" }
+            ],
+            "romaji": "buta"
+        },
+        "horse": {
+            "kanji": "馬",
+            "kana": "うま",
+            "furigana": [
+                { "char": "馬", "reading": "うま" }
+            ],
+            "romaji": "uma"
+        },
+        "sheep": {
+            "kanji": "羊",
+            "kana": "ひつじ",
+            "furigana": [
+                { "char": "羊", "reading": "ひつじ" }
+            ],
+            "romaji": "hitusi"
+        },
+        "chicken": {
+            "kanji": "鶏",
+            "kana": "にわとり",
+            "furigana": [
+                { "char": "鶏", "reading": "にわとり" }
+            ],
+            "romaji": "niwatori"
+        },
+        "duck": {
+            "kanji": "鴨",
+            "kana": "かも",
+            "furigana": [
+                { "char": "鴨", "reading": "かも" }
+            ],
+            "romaji": "kamo"
+        },
+        "mouse": {
+            "kanji": "ねずみ",
+            "kana": "ねずみ",
+            "furigana": [],
+            "romaji": "nezumi"
+        },
+        "goat": {
+            "kanji": "山羊",
+            "kana": "やぎ",
+            "furigana": [
+                { "char": "山羊", "reading": "やぎ" }
+            ],
+            "romaji": "yagi"
+        },
+        "frog": {
+            "kanji": "蛙",
+            "kana": "かえる",
+            "furigana": [
+                { "char": "蛙", "reading": "かえる" }
+            ],
+            "romaji": "kaeru"
+        },
+        "rabbit": {
+            "kanji": "兎",
+            "kana": "うさぎ",
+            "furigana": [
+                { "char": "兎", "reading": "うさぎ" }
+            ],
+            "romaji": "usagi"
+        },
+        "bee": {
+            "kanji": "蜂",
+            "kana": "はち",
+            "furigana": [
+                { "char": "蜂", "reading": "はち" }
+            ],
+            "romaji": "hati"
+        },
+        "ant": {
+            "kanji": "蟻",
+            "kana": "あり",
+            "furigana": [
+                { "char": "蟻", "reading": "あり" }
+            ],
+            "romaji": "ari"
+        },
+
+        "fox": {
+            "kanji": "狐",
+            "kana": "きつね",
+            "furigana": [
+                { "char": "狐", "reading": "きつね" }
+            ],
+            "romaji": "kitune"
+        },
+        "wolf": {
+            "kanji": "狼",
+            "kana": "おおかみ",
+            "furigana": [
+                { "char": "狼", "reading": "おおかみ" }
+            ],
+            "romaji": "ookami"
+        },
+        "bear": {
+            "kanji": "熊",
+            "kana": "くま",
+            "furigana": [
+                { "char": "熊", "reading": "くま" }
+            ],
+            "romaji": "kuma"
+        },
+        "deer": {
+            "kanji": "鹿",
+            "kana": "しか",
+            "furigana": [
+                { "char": "鹿", "reading": "しか" }
+            ],
+            "romaji": "sika"
+        },
+        "turtle": {
+            "kanji": "亀",
+            "kana": "かめ",
+            "furigana": [
+                { "char": "亀", "reading": "かめ" }
+            ],
+            "romaji": "kame"
+        },
+        "snake": {
+            "kanji": "蛇",
+            "kana": "へび",
+            "furigana": [
+                { "char": "蛇", "reading": "へび" }
+            ],
+            "romaji": "hebi"
+        },
+        "eagle": {
+            "kanji": "鷲",
+            "kana": "わし",
+            "furigana": [
+                { "char": "鷲", "reading": "わし" }
+            ],
+            "romaji": "wasi"
+        },
+        "hawk": {
+            "kanji": "鷹",
+            "kana": "たか",
+            "furigana": [
+                { "char": "鷹", "reading": "たか" }
+            ],
+            "romaji": "taka"
+        },
+        "owl": {
+            "kanji": "梟",
+            "kana": "ふくろう",
+            "furigana": [
+                { "char": "梟", "reading": "ふくろう" }
+            ],
+            "romaji": "fukurou"
+        },
+        "shark": {
+            "kanji": "鮫",
+            "kana": "さめ",
+            "furigana": [
+                { "char": "鮫", "reading": "さめ" }
+            ],
+            "romaji": "same"
+        },
+        "whale": {
+            "kanji": "鯨",
+            "kana": "くじら",
+            "furigana": [
+                { "char": "鯨", "reading": "くじら" }
+            ],
+            "romaji": "kujira"
+        },
+        "dolphin": {
+            "kanji": "海豚",
+            "kana": "いるか",
+            "furigana": [
+                { "char": "海豚", "reading": "いるか" }
+            ],
+            "romaji": "iruka"
+        },
+        "camel": {
+            "kanji": "駱駝",
+            "kana": "らくだ",
+            "furigana": [
+                { "char": "駱駝", "reading": "らくだ" }
+            ],
+            "romaji": "rakuda"
+        },
+        "monkey": {
+            "kanji": "猿",
+            "kana": "さる",
+            "furigana": [
+                { "char": "猿", "reading": "さる" }
+            ],
+            "romaji": "saru"
+        },
+        "crab": {
+            "kanji": "蟹",
+            "kana": "かに",
+            "furigana": [
+                { "char": "蟹", "reading": "かに" }
+            ],
+            "romaji": "kani"
+        },
+        "spider": {
+            "kanji": "蜘蛛",
+            "kana": "くも",
+            "furigana": [
+                { "char": "蜘蛛", "reading": "くも" }
+            ],
+            "romaji": "kumo"
+        },
+
+        "leopard": {
+            "kanji": "豹",
+            "kana": "ひょう",
+            "furigana": [
+                { "char": "豹", "reading": "ひょう" }
+            ],
+            "romaji": "hyou"
+        },
+        "jaguar": {
+            "kanji": "ジャガー",
+            "kana": "ジャガー",
+            "furigana": [],
+            "romaji": "jagaa"
+        },
+        "panther": {
+            "kanji": "黒豹",
+            "kana": "くろひょう",
+            "furigana": [
+                { "char": "黒", "reading": "くろ" },
+                { "char": "豹", "reading": "ひょう" }
+            ],
+            "romaji": "kurohyou"
+        },
+        "buffalo": {
+            "kanji": "バッファロー",
+            "kana": "バッファロー",
+            "furigana": [],
+            "romaji": "baffaroo"
+        },
+        "hedgehog": {
+            "kanji": "針鼠",
+            "kana": "はりねずみ",
+            "furigana": [
+                { "char": "針鼠", "reading": "はりねずみ" }
+            ],
+            "romaji": "harinezumi"
+        },
+        "beaver": {
+            "kanji": "ビーバー",
+            "kana": "ビーバー",
+            "furigana": [],
+            "romaji": "biibaa"
+        },
+        "octopus": {
+            "kanji": "蛸",
+            "kana": "たこ",
+            "furigana": [
+                { "char": "蛸", "reading": "たこ" }
+            ],
+            "romaji": "tako"
+        },
+        "squid": {
+            "kanji": "烏賊",
+            "kana": "いか",
+            "furigana": [
+                { "char": "烏賊", "reading": "いか" }
+            ],
+            "romaji": "ika"
+        },
+        "jellyfish": {
+            "kanji": "水母",
+            "kana": "くらげ",
+            "furigana": [
+                { "char": "水母", "reading": "くらげ" }
+            ],
+            "romaji": "kurage"
+        },
+        "falcon": {
+            "kanji": "隼",
+            "kana": "はやぶさ",
+            "furigana": [
+                { "char": "隼", "reading": "はやぶさ" }
+            ],
+            "romaji": "hayabusa"
+        },
+        "vulture": {
+            "kanji": "禿鷹",
+            "kana": "はげたか",
+            "furigana": [
+                { "char": "禿", "reading": "はげ" },
+                { "char": "鷹", "reading": "たか" }
+            ],
+            "romaji": "hagetaka"
+        },
+        "lizard": {
+            "kanji": "蜥蜴",
+            "kana": "とかげ",
+            "furigana": [
+                { "char": "蜥蜴", "reading": "とかげ" }
+            ],
+            "romaji": "tokage"
+        },
+        "otter": {
+            "kanji": "獺",
+            "kana": "かわうそ",
+            "furigana": [
+                { "char": "獺", "reading": "かわうそ" }
+            ],
+            "romaji": "kawauso"
+        },
+        "penguin": {
+            "kanji": "ペンギン",
+            "kana": "ペンギン",
+            "furigana": [],
+            "romaji": "pengin"
+        },
+        "seal": {
+            "kanji": "海豹",
+            "kana": "あざらし",
+            "furigana": [
+                { "char": "海豹", "reading": "あざらし" }
+            ],
+            "romaji": "azarasi"
+        },
+        "rhino": {
+            "kanji": "犀",
+            "kana": "さい",
+            "furigana": [
+                { "char": "犀", "reading": "さい" }
+            ],
+            "romaji": "sai"
+        },
+
+        "wombat": {
+            "kanji": "ウォンバット",
+            "kana": "ウォンバット",
+            "furigana": [],
+            "romaji": "wonbatto"
+        },
+        "platypus": {
+            "kanji": "カモノハシ",
+            "kana": "カモノハシ",
+            "furigana": [],
+            "romaji": "kamonohasi"
+        },
+        "lynx": {
+            "kanji": "リンクス",
+            "kana": "リンクス",
+            "furigana": [],
+            "romaji": "rinkusu"
+        },
+        "gazelle": {
+            "kanji": "ガゼル",
+            "kana": "ガゼル",
+            "furigana": [],
+            "romaji": "gazeru"
+        },
+        "meerkat": {
+            "kanji": "ミーアキャット",
+            "kana": "ミーアキャット",
+            "furigana": [],
+            "romaji": "miakkyatto"
+        },
+        "stingray": {
+            "kanji": "エイ",
+            "kana": "エイ",
+            "furigana": [],
+            "romaji": "ei"
+        },
+        "piranha": {
+            "kanji": "ピラニア",
+            "kana": "ピラニア",
+            "furigana": [],
+            "romaji": "pirania"
+        },
+        "flamingo": {
+            "kanji": "フラミンゴ",
+            "kana": "フラミンゴ",
+            "furigana": [],
+            "romaji": "furamingo"
+        },
+        "toucan": {
+            "kanji": "オオハシ",
+            "kana": "オオハシ",
+            "furigana": [],
+            "romaji": "oohasi"
+        },
+        "manta": {
+            "kanji": "マンタ",
+            "kana": "マンタ",
+            "furigana": [],
+            "romaji": "manta"
+        },
+        "walrus": {
+            "kanji": "セイウチ",
+            "kana": "セイウチ",
+            "furigana": [],
+            "romaji": "seiuti"
+        },
+        "hyena": {
+            "kanji": "ハイエナ",
+            "kana": "ハイエナ",
+            "furigana": [],
+            "romaji": "haiena"
+        },
+        "coyote": {
+            "kanji": "コヨーテ",
+            "kana": "コヨーテ",
+            "furigana": [],
+            "romaji": "koyote"
+        },
+        "chameleon": {
+            "kanji": "カメレオン",
+            "kana": "カメレオン",
+            "furigana": [],
+            "romaji": "kamereon"
+        },
+        "baboon": {
+            "kanji": "ヒヒ",
+            "kana": "ヒヒ",
+            "furigana": [],
+            "romaji": "hihi"
+        },
+        "scorpion": {
+            "kanji": "蠍",
+            "kana": "さそり",
+            "furigana": [
+                { "char": "蠍", "reading": "さそり" }
+            ],
+            "romaji": "sasori"
+        },
+
+        "okapi": {
+            "kanji": "オカピ",
+            "kana": "オカピ",
+            "furigana": [],
+            "romaji": "okapi"
+        },
+        "axolotl": {
+            "kanji": "ウーパールーパー",
+            "kana": "ウーパールーパー",
+            "furigana": [],
+            "romaji": "uparaapaa"
+        },
+        "narwhal": {
+            "kanji": "イッカク",
+            "kana": "イッカク",
+            "furigana": [],
+            "romaji": "ikkaku"
+        },
+        "echidna": {
+            "kanji": "ハリモグラ",
+            "kana": "ハリモグラ",
+            "furigana": [],
+            "romaji": "harimogura"
+        },
+        "oryx": {
+            "kanji": "オリックス",
+            "kana": "オリックス",
+            "furigana": [],
+            "romaji": "orikkusu"
+        },
+        "ibex": {
+            "kanji": "アイベックス",
+            "kana": "アイベックス",
+            "furigana": [],
+            "romaji": "aibekkusu"
+        },
+        "muskox": {
+            "kanji": "ジャコウウシ",
+            "kana": "ジャコウウシ",
+            "furigana": [],
+            "romaji": "jakouusi"
+        },
+        "cassowary": {
+            "kanji": "ヒクイドリ",
+            "kana": "ヒクイドリ",
+            "furigana": [],
+            "romaji": "hikuidoi"
+        },
+        "pelican": {
+            "kanji": "ペリカン",
+            "kana": "ペリカン",
+            "furigana": [],
+            "romaji": "perikan"
+        },
+        "sardine": {
+            "kanji": "鰯",
+            "kana": "いわし",
+            "furigana": [
+                { "char": "鰯", "reading": "いわし" }
+            ],
+            "romaji": "iwasi"
+        },
+        "tarantula": {
+            "kanji": "タランチュラ",
+            "kana": "タランチュラ",
+            "furigana": [],
+            "romaji": "taranchura"
+        },
+        "anemone": {
+            "kanji": "イソギンチャク",
+            "kana": "イソギンチャク",
+            "furigana": [],
+            "romaji": "isoginchaku"
+        },
+        "armadillo": {
+            "kanji": "アルマジロ",
+            "kana": "アルマジロ",
+            "furigana": [],
+            "romaji": "arumajiro"
+        },
+        "mongoose": {
+            "kanji": "マングース",
+            "kana": "マングース",
+            "furigana": [],
+            "romaji": "manguusu"
+        },
+        "barracuda": {
+            "kanji": "バラクーダ",
+            "kana": "バラクーダ",
+            "furigana": [],
+            "romaji": "barakuuda"
+        },
+        "weasel": {
+            "kanji": "鼬",
+            "kana": "いたち",
+            "furigana": [
+                { "char": "鼬", "reading": "いたち" }
+            ],
+            "romaji": "itachi"
+        }
+    }
+}
