@@ -30,14 +30,6 @@
             "iconAlt": "Italian flag",
             "words": "./assets/data/lang/en.json",
             "tested": 0
-        },
-        {
-            "id": "de",
-            "name": "Deutsch",
-            "icon": "./assets/images/icons/flags/de-flag.svg",
-            "iconAlt": "German flag",
-            "words": "./assets/data/lang/en.json",
-            "tested": 0
         }
     ],
 

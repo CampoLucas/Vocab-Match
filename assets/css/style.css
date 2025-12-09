@@ -111,7 +111,7 @@
 /* Game tile */
 
 .game-tile {
-    background: #f4f4f4;
+    background: #868686;
     border-radius: 10px;
     padding: 0.7rem 0.3rem;
     text-align: center;
@@ -130,7 +130,7 @@
 
 .game-tile.selected {
     border-color: #3399ff;
-    background: #d7eaff;
+    background: #b6b6b6;
 }
 
 .game-tile.correct {
