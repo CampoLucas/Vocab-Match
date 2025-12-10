@@ -41,7 +41,7 @@
         }
     ],
 
-    "select-phrases": [
+    "selectPhrases": [
         "What language do you wanna practice today?",
         "¿Qué idioma quieres practicar hoy?",
         "今日はどの言語を練習したい？",

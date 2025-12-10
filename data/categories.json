@@ -9,7 +9,8 @@
                 { "level3": [ "leopard", "jaguar", "panther", "buffalo", "hedgehog", "beaver", "octopus", "squid", "jellyfish", "falcon", "vulture", "lizard", "otter", "penguin", "seal", "rhino" ] },
                 { "level4": [ "wombat", "platypus", "lynx", "gazelle", "meerkat", "stingray", "piranha", "flamingo", "toucan", "manta", "walrus", "hyena", "coyote", "chameleon", "baboon", "scorpion" ] },
                 { "level5": [ "okapi", "axolotl", "narwhal", "echidna", "oryx", "ibex", "muskox", "cassowary", "pelican", "sardine", "tarantula", "anemone", "armadillo", "mongoose", "barracuda", "weasel" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "food-drinks",
@@ -20,7 +21,8 @@
                 { "level3": [ "broccoli", "mushroom", "pineapple", "watermelon", "avocado", "tomato", "cucumber", "shrimp", "salmon", "olive", "honey", "jam", "sandwich", "noodles", "taco", "chocolate" ] },
                 { "level4": [ "spinach", "cabbage", "zucchini", "berries", "almond", "walnut", "sausage", "curry", "stew", "burrito", "sushi", "dumpling", "vinegar", "mustard", "cinnamon", "ginger" ] },
                 { "level5": [ "quinoa", "chickpeas", "lentils", "espresso", "truffle", "anchovy", "saffron", "oyster", "scallop", "basil", "rosemary", "thyme", "paprika", "miso", "kombucha", "kefir" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "clothing",
@@ -31,7 +33,8 @@
                 { "level3": [ "kimono", "cardigan", "beanie", "boots", "trenchcoat", "parka", "tights", "loafers", "gown", "tuxedo", "helmet", "cloak", "poncho", "gloves", "mittens", "wallet" ] },
                 { "level4": [ "corset", "blazer", "sash", "tunic", "robe", "cufflinks", "suspenders", "rain-boots", "windbreaker", "fleece", "goggles", "armband", "wristband", "handbag", "satchel", "messenger-bag" ] },
                 { "level5": [ "kimono-obi", "haori", "fedora", "brooch", "ascot", "velvet-coat", "leather-jacket", "trench-boots", "moccasins", "linen-suit", "tailored-vest", "embroidered-scarf", "silk-robe", "fur-coat", "oxford-shoes", "derby-shoes" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "body-parts",
@@ -42,7 +45,8 @@
                 { "level3": [ "intestine", "muscle", "bone", "skull", "spine", "jaw", "liver", "kidney", "heart", "vein", "artery", "joint", "nerve", "spleen", "tendon", "brain" ] },
                 { "level4": [ "larynx", "pharynx", "pelvis", "diaphragm", "marrow", "cartilage", "cortex", "aorta", "retina", "cornea", "ligament", "abdomen", "trachea", "bronchi", "uterus", "prostate" ] },
                 { "level5": [ "cerebellum", "hippocampus", "medulla", "pituitary-gland", "hypothalamus", "lymph-node", "diaphragm-muscle", "esophagus", "cochlea", "cornea-membrane", "endocrine-gland", "adrenal-gland", "pancreas", "cerebrum", "cerebellar-cortex", "spinal-cord" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "household",
@@ -53,7 +57,8 @@
                 { "level3": [ "washing-machine", "vacuum", "heater", "charger", "keyboard", "monitor", "drawer", "cabinet", "mirror", "mattress", "cushion", "toolbox", "hammer", "screwdriver", "pliers", "basket" ] },
                 { "level4": [ "thermostat", "router", "blender", "humidifier", "dehumidifier", "extension-cord", "power-strip", "bookshelf", "faucet", "pipe", "remote-control", "sewing-machine", "toolkit", "measuring-cup", "whisk", "kettle" ] },
                 { "level5": [ "oscilloscope", "multimeter", "surge-protector", "circuit-board", "ethernet-switch", "modem", "home-server", "projector", "soldering-iron", "loft-bed", "futon-frame", "ceramic-vase", "induction-stove", "cast-iron-pan", "espresso-machine", "air-purifier" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "nature",
@@ -64,7 +69,8 @@
                 { "level3": [ "hurricane", "tornado", "blizzard", "monsoon", "drought", "glacier", "canyon", "volcano", "eclipse", "meadow", "reef", "dune", "cliff", "avalanche", "geyser", "swamp" ] },
                 { "level4": [ "atmosphere", "humidity", "pressure", "erosion", "sediment", "ecosystem", "habitat", "tundra", "savanna", "rainforest", "geyser-basin", "magma-chamber", "seismic-wave", "tectonic-plate", "permafrost", "biosphere" ] },
                 { "level5": [ "stratosphere", "mesosphere", "thermosphere", "lithosphere", "hydrosphere", "troposphere", "cumulonimbus", "cirrostratus", "geomagnetism", "paleoclimate", "cryosphere", "antimatter", "astrobiology", "thermodynamics", "aurora", "ionosphere" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "travel",
@@ -75,7 +81,8 @@
                 { "level3": [ "embassy", "university", "laboratory", "courthouse", "harbor", "observatory", "arena", "campsite", "monument", "post-office", "bakery", "pharmacy", "clinic", "dormitory", "suburb", "hostel" ] },
                 { "level4": [ "cathedral", "sanctuary", "bazaar", "district", "headquarters", "border-checkpoint", "consulate", "greenhouse", "lighthouse", "industrial-zone", "botanical-garden", "fortress", "citadel", "metro-line", "terminal", "customs" ] },
                 { "level5": [ "archipelago", "peninsula", "isthmus", "plateau", "metropolis", "megacity", "infrastructure-hub", "geothermal-plant", "international-terminal", "consular-building", "reef-station", "hydropower-facility", "satellite-town", "free-trade-zone", "diplomatic-sector", "biosphere-reserve" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "technology",
@@ -86,7 +93,8 @@
                 { "level3": [ "processor", "graphics-card", "motherboard", "ram", "ssd", "operating-system", "app", "database", "wifi-signal", "firewall", "browser", "cloud-web", "ai-model", "algorithm", "sensor", "drone" ] },
                 { "level4": [ "encryption", "virtualization", "compiler", "framework", "protocol", "neural-network", "blockchain", "automation", "firmware", "robotics", "distributed-system", "api-gateway", "microcontroller", "quantum-bit", "thermal-paste", "architecture" ] },
                 { "level5": [ "tensor-core", "photolithography", "quantum-computing", "superconductivity", "nanotechnology", "machine-vision", "autonomous-control", "genetic-algorithm", "edge-computing", "deep-learning", "electromagnetic-shielding", "optical-encoder", "lidar-array", "rfid-matrix", "meta-learning", "neuromorphic-chip" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "abstract",
@@ -97,7 +105,8 @@
                 { "level3": [ "justice", "freedom", "equality", "belief", "culture", "memory", "habit", "pattern", "goal", "challenge", "effort", "method", "doubt", "logic", "reason", "failure" ] },
                 { "level4": [ "philosophy", "identity", "morality", "responsibility", "ambition", "strategy", "perception", "expectation", "tradition", "intuition", "ideology", "ethics", "principle", "influence", "awareness", "motivation" ] },
                 { "level5": [ "existentialism", "determinism", "duality", "cognition", "consciousness", "absurdism", "altruism", "relativism", "empirical-truth", "epistemology", "metaphysics", "ontology", "autonomy", "synergy", "transcendence", "phenomenology" ] }
-            ]
+            ],
+            "language": ["any"]
         },
         {
             "id": "verbs",
@@ -108,7 +117,68 @@
                 { "level3": [ "decide", "choose", "compare", "explain", "describe", "discover", "imagine", "create", "improve", "repair", "measure", "translate", "memorize", "rotate", "signal", "travel" ] },
                 { "level4": [ "negotiate", "analyze", "evaluate", "prioritize", "cooperate", "operate", "calibrate", "manipulate", "synchronize", "stabilize", "improvise", "interpret", "verify", "restructure", "adapt", "optimize" ] },
                 { "level5": [ "theorize", "conceptualize", "standardize", "automate", "decentralize", "authenticate", "diagnose", "simulate", "configure", "innovate", "speculate", "delegate", "consolidate", "orchestrate", "parameterize", "extrapolate" ] }
-            ]
+            ],
+            "language": ["any"]
+        },
+        {
+            "id": "jlpt-n5",
+            "name": "JLPT N5",
+            "levels": [
+                { "level1": [] },
+                { "level2": [] },
+                { "level3": [] },
+                { "level4": [] },
+                { "level5": [] }
+            ],
+            "language": ["jp"]
+        },
+        {
+            "id": "jlpt-n4",
+            "name": "JLPT N4",
+            "levels": [
+                { "level1": [] },
+                { "level2": [] },
+                { "level3": [] },
+                { "level4": [] },
+                { "level5": [] }
+            ],
+            "language": ["jp"]
+        },
+        {
+            "id": "jlpt-n3",
+            "name": "JLPT N3",
+            "levels": [
+                { "level1": [] },
+                { "level2": [] },
+                { "level3": [] },
+                { "level4": [] },
+                { "level5": [] }
+            ],
+            "language": ["jp"]
+        },
+        {
+            "id": "jlpt-n2",
+            "name": "JLPT N2",
+            "levels": [
+                { "level1": [] },
+                { "level2": [] },
+                { "level3": [] },
+                { "level4": [] },
+                { "level5": [] }
+            ],
+            "language": ["jp"]
+        },
+        {
+            "id": "jlpt-n1",
+            "name": "JLPT N1",
+            "levels": [
+                { "level1": [] },
+                { "level2": [] },
+                { "level3": [] },
+                { "level4": [] },
+                { "level5": [] }
+            ],
+            "language": ["jp"]
         }
     ]
 }

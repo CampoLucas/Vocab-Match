@@ -1,12 +1,14 @@
+import { App } from "./core/App.js";
 
-let languages = [];
-let subtitleTexts = [];
-let appData = null;
-let fromSelected = null;
-let toSelected = null;
+const app = new App();
+await app.init();
 
+window.app = app;
+
+// Get references
 const fromBox = document.getElementById("from-lang");
 const toBox = document.getElementById("to-lang");
+
 const dropdownFrom = document.getElementById("dropdown-from");
 const dropdownTo = document.getElementById("dropdown-to");
 
@@ -18,26 +20,31 @@ const toName = document.getElementById("to-name");
 
 const subtitle = document.getElementById("subtitle");
 
-// Load JSON
-fetch("./data/app-data.json")
-    .then(response => {
-        if (!response.ok){
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        appData = data;
-        languages = data.languages;
-        renderDropdowns();
-        startSubtitleRotation();
-    })
-    .catch(error => {
-        console.error('Listen! Error fetching or parsing JSON:', error);
-        document.getElementById("json-output").textContent = "Failed to load JSON";
-    });
+// state
+
+let fromSelected = null;
+let toSelected = null;
+
+// initial setup
+
+renderDropdowns(); // Populate dropdowns using app.Languages
+startSubtitleRotation(true); // Start rotating subtitle using app data
+
+// Open popup when clicking start
+document.querySelector(".start-button").addEventListener("click", () => {
+    if (!fromSelected || !toSelected) {
+        alert("Select both languages first!");
+        return;
+    }
+    
+    app.popup.open();
+})
+
+// dropdowns
 
 function renderDropdowns() {
+    const languages = app.languages;
+    
     dropdownFrom.innerHTML = "";
     dropdownTo.innerHTML = "";
 
@@ -48,10 +55,12 @@ function renderDropdowns() {
     else{
         languages.forEach(lang => {
             if (lang.id !== toSelected) {
-                dropdownFrom.innerHTML += dropdownItem(lang, "from");
+                const item = createDropdownItem(lang, "from");
+                dropdownFrom.appendChild(item);
             }
             if (lang.id !== fromSelected) {
-                dropdownTo.innerHTML += dropdownItem(lang, "to");
+                const item = createDropdownItem(lang, "to");
+                dropdownTo.appendChild(item);
             }
         });
 
@@ -60,16 +69,29 @@ function renderDropdowns() {
     
 }
 
-function dropdownItem(lang, side) {
-    return `
-    <div class="dropdown-item" onclick="selectLanguage('${lang.id}','${side}')">
-      <img class="icon flag" src="${lang.icon}" />
-      <span class="lang-name">${lang.name}</span>
-    </div>`;
+function createDropdownItem(lang, side){
+    const template = document.getElementById("dropdown-item");
+
+    const div = template.content.firstElementChild.cloneNode(true);
+
+    // fill image
+    const img = div.querySelector("img.flag");
+    img.src = lang.icon;
+    img.alt = lang.iconAlt;
+
+    // fill text
+    const label = div.querySelector(".lang-name");
+    label.textContent = lang.name;
+
+    div.addEventListener("click", () => {
+        selectLanguage(lang.id, side);
+    });
+
+    return div;
 }
 
 function selectLanguage(id, side) {
-    const lang = languages.find(l => l.id === id);
+    const lang = app.languages.find(l => l.id === id);
 
     if (side === "from") {
         fromSelected = id;
@@ -90,20 +112,17 @@ function selectLanguage(id, side) {
     renderDropdowns();
 }
 
-fromBox.addEventListener("click", () => toggle(dropdownFrom));
-toBox.addEventListener("click", () => toggle(dropdownTo));
+fromBox.addEventListener("click", () => toggleDropdown(dropdownFrom));
+toBox.addEventListener("click", () => toggleDropdown(dropdownTo));
 
-function toggle(drop) {
+function toggleDropdown(drop) {
     dropdownFrom.classList.add("disabled");
     dropdownTo.classList.add("disabled");
 
     drop.classList.remove("disabled");
+    drop.classList.remove("drop-up"); // Remove previous drop-up state
 
-    // Remove previous drop-up state
-    drop.classList.remove("drop-up");
-
-    // Measure dropdown
-    const rect = drop.getBoundingClientRect();
+    const rect = drop.getBoundingClientRect(); // Measure dropdown
     const spaceBelow = window.innerHeight - rect.top;
     const dropdownHeight = drop.scrollHeight;
 
@@ -116,7 +135,7 @@ function toggle(drop) {
 // Close dropdowns when clicking outside
 document.addEventListener("click", (event) => {
     const clickedInsideFrom = fromBox.contains(event.target) || dropdownFrom.contains(event.target);
-    const clickedInsideTo   = toBox.contains(event.target)   || dropdownTo.contains(event.target);
+    const clickedInsideTo   = toBox.contains(event.target) || dropdownTo.contains(event.target);
 
     // If NOT clicking inside either language selector → close both
     if (!clickedInsideFrom && !clickedInsideTo) {
@@ -125,9 +144,13 @@ document.addEventListener("click", (event) => {
     }
 });
 
-function startSubtitleRotation() {
-    let list = appData["select-phrases"];
+function startSubtitleRotation(forceSet = false) {
+    let list = app.selectPhrases;
     let index = 0;
+
+    if (forceSet){
+        subtitle.textContent = list[0];
+    }
 
     setInterval(() => {
         index = (index + 1) % list.length;
