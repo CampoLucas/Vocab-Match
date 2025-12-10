@@ -1,0 +1,82 @@
+{
+    "modes": [
+        {
+            "id": "word-matching",
+            "name": "Word Matching",
+            "template": "matching-base",
+            "class": "MatchingGame",
+            "requires": null,
+            "options": {
+                "pairCounts": [2, 3, 4, 6]
+            }
+        },
+        {
+            "id": "category-completion",
+            "name": "Category Completion",
+            "template": "matching-base",
+            "class": "CategoryCompletionGame",
+            "requires": null,
+            "options": {
+                "pairCounts": [3, 4, 6]
+            }
+        },
+        {
+            "id": "word-matching-jp",
+            "name": "Kaniji ↔ Kana matching",
+            "template": "matching-base",
+            "class": "KanjiMatchGame",
+            "requires": ["jp"],
+            "options": {
+                "pairCounts": [2, 3, 4, 6],
+                "extraCategories": [
+                    {
+                        "languages": ["jp"],
+                        "categories": ["jlpt-n5", "jlpt-n4", "jlpt-n3", "jlpt-n2", "jlpt-n1"]
+                    }
+                ]
+            }
+            
+        },
+        {
+            "id": "meaning-choice",
+            "name": "Meaning Choice",
+            "template": "choice-base",
+            "class": "MeaningChoiceGame",
+            "requires": null,
+            "options": {
+                "choices": 4
+            }
+        },
+        {
+            "id": "kanji-kana-choice",
+            "name": "Kanji → Kana Choice",
+            "template": "choice-base",
+            "class": "KanjiChoiceGame",
+            "requires": ["jp"],
+            "options": {
+                "choices": 4,
+                "extraCategories": [
+                    {
+                        "languages": ["jp"],
+                        "categories": ["jlpt-n5", "jlpt-n4", "jlpt-n3", "jlpt-n2", "jlpt-n1"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "flashcards-basic",
+            "name": "Flashcards",
+            "template": "flashcard-basic",
+            "class": "FlashcardGame",
+            "requires": null,
+            "options": {
+                "extraCategories": [
+                    {
+                        "languages": ["jp"],
+                        "categories": ["jlpt-n5", "jlpt-n4", "jlpt-n3", "jlpt-n2", "jlpt-n1"]
+                    }
+                ]
+            }
+        }
+    ]
+}

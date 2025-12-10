@@ -36,6 +36,11 @@ export class PopupManager {
 
         // Update title
         document.getElementById("game-title").textContent = "Setup";
+
+        // Refresh UI when shown
+        if (window.app && window.app.setupUI) {
+            window.app.setupUI.refresh();
+        }
     }
 
     // Switch popup to game

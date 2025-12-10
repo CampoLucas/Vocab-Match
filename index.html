@@ -1,20 +1,13 @@
-<!-- 
-Page 1 Scope:
-- One page layout
-- footer with contact
-- Background: buldings at the bottom; japanese, spanish and english words decorating the sides; title at the top; explanation at the center
-- Language selector usng jsons
-- Dificulty selector using json
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatchPop - Practice Languages</title>
+    <title>Vocab Match</title>
+    
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="topnav">
@@ -76,6 +69,16 @@ Page 1 Scope:
 
                     <div id="setup-view">
                         <p style="color: #666; margin-top: 0;">Choose gamemode, category, level and options</p>
+
+                        <!-- Game mode selector -->
+                        <div class="lang-container">
+                            <div class="lang-box" id="mode-select">
+                                <span class="lang-name" id="mode-name">Select game mode</span>
+                            </div>
+
+                            <div class="dropdown-list disabled" id="dropdown-modes"></div>
+                        </div>
+
                         <button id="setup-play-btn" class="start-button">Play</button>
                     </div>
 
@@ -89,10 +92,17 @@ Page 1 Scope:
         </div>
     </main>
 
+    <!-- Templates -->
     <template id="dropdown-item">
         <div class="dropdown-item" onclick="">
             <img class="icon flag" src="" />
             <span class="lang-name"></span>
+        </div>
+    </template>
+
+    <template id="mode-item">
+        <div class="dropdown-item">
+            <span class="mode-name"></span>
         </div>
     </template>
 
