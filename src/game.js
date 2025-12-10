@@ -132,7 +132,7 @@ function onTileClick(tile) {
 // Get the words
 
 async function getRandomWords(categoryId, levelIndex = 0) {
-    const response = await fetch("./assets/data/categories.json");
+    const response = await fetch("./data/categories.json");
     const data = await response.json();
 
     const cat = data.categories.find(c => c.id === categoryId);
@@ -148,8 +148,8 @@ async function getRandomWords(categoryId, levelIndex = 0) {
 
 async function getTranslationsForWords(wordIds, lang1, lang2){
     const [res1, res2] = await Promise.all([
-        fetch(`./assets/data/lang/${lang1}.json`),
-        fetch(`./assets/data/lang/${lang2}.json`)
+        fetch(`./data/lang/${lang1}.json`),
+        fetch(`./data/lang/${lang2}.json`)
     ]);
 
     const dict1 = (await res1.json()).translations;
