@@ -22,7 +22,7 @@
         },
         {
             "id": "word-matching-jp",
-            "name": "Kaniji ↔ Kana matching",
+            "name": "Kaniji ↔ Kana",
             "template": "matching-base",
             "class": "KanjiMatchGame",
             "requires": ["jp"],
@@ -49,7 +49,7 @@
         },
         {
             "id": "kanji-kana-choice",
-            "name": "Kanji → Kana Choice",
+            "name": "Kanji → Kana",
             "template": "choice-base",
             "class": "KanjiChoiceGame",
             "requires": ["jp"],

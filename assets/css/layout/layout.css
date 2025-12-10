@@ -22,6 +22,7 @@
     align-items: center;
     align-self: end;
     padding-bottom: 35svh;
+    
 }
 
 body {
@@ -47,16 +48,6 @@ body {
     font-size: var(--font-subtitle-size);
     margin-top: .5rem;
     opacity: 0.9;
-}
-
-.language-selector {
-    align-items: center;
-    gap: 1rem;
-}
-
-.lang-container {
-    position: relative;
-    display: inline-block;
 }
 
 .start-button-container {

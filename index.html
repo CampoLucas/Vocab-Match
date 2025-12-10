@@ -24,33 +24,32 @@
 
 
             <div class="bottom-container">
-                <div class="language-selector">
+                <div class="lang container">
                     <!-- Left language box -->
-                    <div class="lang-container">
-                        <div class="lang-box" id="from-lang">
-                            <img class="icon flag disabled" id="from-flag" src="" alt="" />
+                    <div class="lang dropdown-container">
+                        <div class="lang dropdown" id="from-lang">
+                            <img class="lang icon flag disabled" id="from-flag" src="" alt="" />
                             <span class="lang-name" id="from-name">Select language</span>
                         </div>
-                        <div class="dropdown-list disabled" id="dropdown-from"></div>
+                        <div class="lang dropdown-list disabled" id="dropdown-from"></div>
                     </div>
 
                     <!-- Arrow icon -->
                     <div class="icon arrow-3"></div>
 
                     <!-- Left language box -->
-                    <div class="lang-container">
-                        <div class="lang-box" id="to-lang">
-                            <img class="icon flag disabled" id="to-flag" src="" alt="" />
+                    <div class="lang dropdown-container">
+                        <div class="lang dropdown" id="to-lang">
+                            <img class="lang icon flag disabled" id="to-flag" src="" alt="" />
                             <span class="lang-name" id="to-name">Select language</span>
                         </div>
-                        <div class="dropdown-list disabled" id="dropdown-to"></div>
+                        <div class="lang dropdown-list disabled" id="dropdown-to"></div>
                     </div>
                 </div>
 
                 <div class="start-button-container">
                     <button class="start-button"><span>►</span>Start</button>
                 </div>
-                <div id="json-output" style="padding: 1rem; font-size: 1.2rem;"></div>
             </div>
         </div>
 
@@ -71,12 +70,12 @@
                         <p style="color: #666; margin-top: 0;">Choose gamemode, category, level and options</p>
 
                         <!-- Game mode selector -->
-                        <div class="lang-container">
-                            <div class="lang-box" id="mode-select">
+                        <div class="setup container">
+                            <div class="setup dropdown" id="mode-select">
                                 <span class="lang-name" id="mode-name">Select game mode</span>
                             </div>
 
-                            <div class="dropdown-list disabled" id="dropdown-modes"></div>
+                            <div class="setup dropdown-list disabled" id="dropdown-modes"></div>
                         </div>
 
                         <button id="setup-play-btn" class="start-button">Play</button>
@@ -93,16 +92,16 @@
     </main>
 
     <!-- Templates -->
-    <template id="dropdown-item">
-        <div class="dropdown-item" onclick="">
-            <img class="icon flag" src="" />
-            <span class="lang-name"></span>
+    <template id="lang-item">
+        <div class="lang dropdown-item" onclick="">
+            <img class="lang icon flag" src="" />
+            <span class="lang dropdown-name"></span>
         </div>
     </template>
 
     <template id="mode-item">
-        <div class="dropdown-item">
-            <span class="mode-name"></span>
+        <div class="setup dropdown-item">
+            <span class="setup dropdown-name"></span>
         </div>
     </template>
 

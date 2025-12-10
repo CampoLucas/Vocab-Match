@@ -21,9 +21,9 @@ const toName = document.getElementById("to-name");
 const subtitle = document.getElementById("subtitle");
 
 // state
-
-let fromSelected = null;
-let toSelected = null;
+let currentDropdown = null;
+window.fromSelected = null;
+window.toSelected = null;
 
 // initial setup
 
@@ -32,7 +32,7 @@ startSubtitleRotation(true); // Start rotating subtitle using app data
 
 // Open popup when clicking start
 document.querySelector(".start-button").addEventListener("click", () => {
-    if (!fromSelected || !toSelected) {
+    if (!window.fromSelected || !window.toSelected) {
         alert("Select both languages first!");
         return;
     }
@@ -54,11 +54,11 @@ function renderDropdowns() {
     }
     else{
         languages.forEach(lang => {
-            if (lang.id !== toSelected) {
+            if (lang.id !== window.toSelected) {
                 const item = createDropdownItem(lang, "from");
                 dropdownFrom.appendChild(item);
             }
-            if (lang.id !== fromSelected) {
+            if (lang.id !== window.fromSelected) {
                 const item = createDropdownItem(lang, "to");
                 dropdownTo.appendChild(item);
             }
@@ -70,7 +70,7 @@ function renderDropdowns() {
 }
 
 function createDropdownItem(lang, side){
-    const template = document.getElementById("dropdown-item");
+    const template = document.getElementById("lang-item");
 
     const div = template.content.firstElementChild.cloneNode(true);
 
@@ -80,7 +80,7 @@ function createDropdownItem(lang, side){
     img.alt = lang.iconAlt;
 
     // fill text
-    const label = div.querySelector(".lang-name");
+    const label = div.querySelector(".dropdown-name");
     label.textContent = lang.name;
 
     div.addEventListener("click", () => {
@@ -94,13 +94,13 @@ function selectLanguage(id, side) {
     const lang = app.languages.find(l => l.id === id);
 
     if (side === "from") {
-        fromSelected = id;
+        window.fromSelected = id;
         fromFlag.src = lang.icon;
         fromFlag.alt = lang.iconAlt;
         fromFlag.classList.remove("disabled");
         fromName.textContent = lang.name;
     } else {
-        toSelected = id;
+        window.toSelected = id;
         toFlag.src = lang.icon;
         toFlag.alt = lang.iconAlt;
         toFlag.classList.remove("disabled");
@@ -116,8 +116,14 @@ fromBox.addEventListener("click", () => toggleDropdown(dropdownFrom));
 toBox.addEventListener("click", () => toggleDropdown(dropdownTo));
 
 function toggleDropdown(drop) {
+    currentDropdown = drop;
     dropdownFrom.classList.add("disabled");
     dropdownTo.classList.add("disabled");
+    fromBox.classList.remove("selected");
+    toBox.classList.remove("selected");
+
+    const dropdownField = document.getElementById(drop.id === "dropdown-to" ? "to-lang" : "from-lang");
+    dropdownField.classList.add("selected");
 
     drop.classList.remove("disabled");
     drop.classList.remove("drop-up"); // Remove previous drop-up state
@@ -139,6 +145,11 @@ document.addEventListener("click", (event) => {
 
     // If NOT clicking inside either language selector → close both
     if (!clickedInsideFrom && !clickedInsideTo) {
+        if (currentDropdown) {
+            const dropdownField = document.getElementById(currentDropdown.id === "dropdown-to" ? "to-lang" : "from-lang");
+            dropdownField.classList.remove("selected");
+        }
+        
         dropdownFrom.classList.add("disabled");
         dropdownTo.classList.add("disabled");
     }

@@ -7,7 +7,7 @@ export class SetupUIManager {
         // refs
         this.modeBox = document.getElementById("mode-select");
         this.modeDropdown = document.getElementById("dropdown-modes");
-        this.modeSelectedName = document.getElementById("mode-selected-name");
+        this.modeSelectedName = document.getElementById("mode-name");
 
         this.modeBox.addEventListener("click", () => this.toggleModeDropdown());
     }
@@ -22,7 +22,8 @@ export class SetupUIManager {
     }
 
     populateModeDropdown() {
-        const modes = this.app.modes.getAllModes();
+        if (window.toSelected === null) return;
+        const modes = this.app.modes.getCompatibleModes(window.toSelected);
         this.modeDropdown.innerHTML = "";
 
         const template = document.getElementById("mode-item");
@@ -30,7 +31,7 @@ export class SetupUIManager {
         modes.forEach(mode => {
             const element = template.content.firstElementChild.cloneNode(true);
 
-            element.querySelector(".mode-name").textContent = mode.name;
+            element.querySelector(".dropdown-name").textContent = mode.name;
 
             element.addEventListener("click", () => {
                 this.selectMode(mode.id);
