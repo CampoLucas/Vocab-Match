@@ -8,7 +8,7 @@ async function testLanguages(showMissing = true){
     console.log(await testLanguage("es", categories, showMissing));
     console.log(await testLanguage("jp", categories, showMissing));
     console.log(await testLanguage("it", categories, showMissing));
-    // console.log(await testLanguage("de", categories, showMissing));
+    console.log(await testLanguage("de", categories, showMissing));
 }
 
 
