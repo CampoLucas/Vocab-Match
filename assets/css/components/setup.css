@@ -1,5 +1,12 @@
 .setup.dropdown {
+    border-style: outset;
+    border-width: 0 0 .25rem 0;
+    border-color: #0e4d9496;
+}
 
+.setup.dropdown:hover {
+    border-width: 0 0 .1rem 0;
+    background-color: #1a1a1a24;
 }
 
 .setup.dropdown-item {

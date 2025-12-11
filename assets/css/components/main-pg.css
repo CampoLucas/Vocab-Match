@@ -6,10 +6,10 @@
     --lang-dropdown-bg-hover: rgba(198, 198, 198, 0.201);
     
     --lang-dropdown-list-bg: rgba(239, 239, 239, 0.9);
-    --lang-dropdown-list-item-height: 2rem;
+    --lang-dropdown-list-item-height: 3rem;
     
-    --lang-dropdown-item-height: 2rem;
-    --lang-dropdown-item-width: 9rem;
+    --lang-dropdown-item-height: 3.2rem;
+    --lang-dropdown-item-width: 10rem;
     --lang-dropdown-item-bg-hover: rgba(0,0,0,0.1);
     --lang-dropdown-item-bg-selected: rgba(95, 95, 95, 0.1);
 
@@ -119,9 +119,11 @@
 
 @media only screen and (orientation: landscape) and (max-width:1000px) {
     :root {
-        --lang-dropdown-item-height: 1.2rem;
-        --lang-dropdown-item-width: 8rem;
+        --lang-dropdown-item-height: 3rem;
+        --lang-dropdown-item-width: 10rem;
         --lang-dropdown-name-font-size: .8rem;
+
+        --lang-dropdown-list-item-height: 2.5rem;
     }
 
     .lang.dropdown-item {

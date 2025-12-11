@@ -1,4 +1,5 @@
-@import url(./game-pop-up.css);
+@import url("./game-pop-up.css");
+@import url("./setup-layout.css");
 
 .start-pg {
     height: 100svh;

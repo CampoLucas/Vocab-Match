@@ -1,3 +1,5 @@
+import { SettingSelector } from "./SettingSelector.js";
+
 // Controls the setup popup UI
 export class SetupUIManager {
     constructor(app) {
@@ -14,7 +16,70 @@ export class SetupUIManager {
 
     // Called when popup opens
     refresh() {
-        this.populateModeDropdown();
+        const container = document.getElementById("setup-settings");
+        container.innerHTML = "";
+
+        this.createGameModeSelector(container);
+        this.createCategorySelector(container);
+        this.createLevelSelector(container);
+    }
+
+    createGameModeSelector(container) {
+        const modes = this.app.modes.getCompatibleModes(window.toSelected);
+
+        const items = modes.map(m => ({
+            id: m.id,
+            label: m.name
+        }));
+
+        const selector = new SettingSelector("setup-setting-selector", {
+            title: "Game Mode",
+            items,
+            onSelect: (modeId) => {
+                this.selectedModeId = modeId;
+            }
+        });
+
+        container.appendChild(selector.element);
+    }
+
+    createCategorySelector(container) {
+        const items = this.app.categories.map(c => ({
+            id: c.id,
+            label: c.name
+        }));
+
+        const selector = new SettingSelector("setup-setting-selector", {
+            title: "Category",
+            items,
+            onSelect: (catId) => {
+                this.selectedCategoryId = catId;
+            }
+        });
+
+        container.appendChild(selector.element);
+    }
+
+    createLevelSelector(container) {
+        if (!this.selectedCategoryId) return;
+
+        const category = this.app.categories.find(c => c.id === this.selectedCategoryId);
+
+        // Extract the level names
+        const items = category.levels.map((lvl, i) => ({
+            id: i,
+            label: "Level " + (i + 1)
+        }));
+
+        const selector = new SettingSelector("setup-setting-selector", {
+            title: "Difficulty",
+            items,
+            onSelect: (levelIndex) => {
+                this.selectedLevel = levelIndex;
+            }
+        });
+
+        container.appendChild(selector.element);
     }
 
     toggleModeDropdown() {

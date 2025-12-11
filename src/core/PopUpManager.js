@@ -1,6 +1,8 @@
 // Controls opening/closing the pop-up and switching between the setup and game view
-const hiddenView = "hidden-view";
+
 const hiddenOverlay = "hidden";
+const disabledOverlay = "disabled";
+const hiddenView = "hidden-view";
 
 export class PopupManager {
     
@@ -21,6 +23,7 @@ export class PopupManager {
     // Makes overlay visible and shows the setup screen
     open() {
         this.overlay.classList.remove(hiddenOverlay);
+        this.overlay.classList.remove(disabledOverlay);
         this.showSetup();
     }
 

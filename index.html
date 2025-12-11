@@ -54,8 +54,8 @@
         </div>
 
         <!-- Game popup -->
-        <div id="game-overlay" class="hidden">
-            <div id="game-popup">
+        <div id="game-overlay" class="popup-overlay hidden disabled">
+            <div id="game-popup" class="popup">
 
                 <!-- Header -->
                 <div class="game-header">
@@ -63,32 +63,39 @@
                     <button id="game-close-btn">✕</button>
                 </div>
 
-                <!-- Popup with 2 views -->
-                <div id="popup-body">
-
-                    <div id="setup-view">
-                        <p style="color: #666; margin-top: 0;">Choose gamemode, category, level and options</p>
-
-                        <!-- Game mode selector -->
-                        <div class="setup container">
-                            <div class="setup dropdown" id="mode-select">
-                                <span class="lang-name" id="mode-name">Select game mode</span>
+                <!-- Popup view -->
+                <div id="setup-view">
+                    <p style="color: #666; margin-top: 0;">Choose gamemode, category, level and options</p>
+                    
+                    <div id="setup-settings" class="settings-bg">
+                        <div class="setting-selector">
+                            <p class="setting-title">Game Mode</p>
+                            <div class="setup container">
+                                <div class="setup dropdown" id="mode-select">
+                                    <span class="dropdown-name" id="mode-name">Select</span>
+                                </div>
+                                <div class="setup dropdown-list disabled" id="dropdown-modes"></div>
                             </div>
-
-                            <div class="setup dropdown-list disabled" id="dropdown-modes"></div>
                         </div>
-
-                        <button id="setup-play-btn" class="start-button">Play</button>
+                        
                     </div>
 
-                    <!-- Game view -->
-                    <div id="game-view" class="hidden-view">
-                        <!-- Game grid -->
-                        <div id="game-grid"></div>
-                    </div>
+
+                    <!-- Game mode selector -->
+
                 </div>
+                
+                <!-- Game view -->
+                <div id="game-view" class="hidden-view">
+                    <!-- Game tempaltes here -->
+                </div>
+                
+                <!-- Play/Continue -->
+                <button id="setup-play-btn" class="start-button">Play</button>
+
             </div>
         </div>
+        
     </main>
 
     <!-- Templates -->
@@ -102,6 +109,18 @@
     <template id="mode-item">
         <div class="setup dropdown-item">
             <span class="setup dropdown-name"></span>
+        </div>
+    </template>
+
+    <template id="setup-setting-selector">
+        <div class="setting-selector">
+            <p class="setting-title">Default</p>
+            <div class="setup container">
+                <div class="setup dropdown" id="mode-select">
+                    <span class="dropdown-name" id="mode-name">Select</span>
+                </div>
+                <div class="setup dropdown-list disabled" id="dropdown-modes"></div>
+            </div>
         </div>
     </template>
 
