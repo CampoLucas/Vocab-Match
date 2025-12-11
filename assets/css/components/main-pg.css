@@ -1,5 +1,5 @@
 :root {
-    --lang-dropdown-name-font-size: 1.2rem;
+    --lang-dropdown-name-font-size: 1rem;
     --lang-dropdown-name-font-color: #1a1a1a;
     
     --lang-dropdown-bg: rgba(255,255,255,0.15);
@@ -37,14 +37,9 @@
     width: var(--lang-dropdown-item-width);
     height: var(--lang-dropdown-item-height);
     background-color: var(--lang-dropdown-bg);
-    border-radius: 14px;
+    border-radius: 18px;
     padding: 0.7rem 1.2rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: .6rem;
     transition: background-color var(--transition-speed), border-width .075s;
-    overflow: hidden;
     border-style: outset;
     border-width: 0 0 .25rem 0;
     border-color: #0e4d9496;
@@ -62,6 +57,9 @@
 
 .lang.dropdown-name {
     font-size: var(--lang-dropdown-name-font-size);
+}
+
+.lang.dropdown-name.element {
     color: var(--lang-dropdown-name-font-color);
 }
 
@@ -76,8 +74,6 @@
     z-index: 10;
     width: 100%;
 }
-
-
 
 .lang.dropdown-list.drop-up {
     transform: translateY(calc(-100% - 0.5rem));
@@ -103,9 +99,9 @@
 
 @media only screen and (orientation: portrait) and (max-width:600px) {
     :root {
-        --lang-dropdown-item-height: 2rem;
-        --lang-dropdown-item-width: 6rem;
-        --lang-dropdown-name-font-size: .9rem;
+        --lang-dropdown-item-height: 3rem;
+        --lang-dropdown-item-width: 8rem;
+        --lang-dropdown-name-font-size: 1rem;
     }
     
     .lang.dropdown-name {
@@ -120,10 +116,14 @@
 @media only screen and (orientation: landscape) and (max-width:1000px) {
     :root {
         --lang-dropdown-item-height: 3rem;
-        --lang-dropdown-item-width: 10rem;
-        --lang-dropdown-name-font-size: .8rem;
+        --lang-dropdown-item-width: 9rem;
+        --lang-dropdown-name-font-size: .9rem;
 
         --lang-dropdown-list-item-height: 2.5rem;
+    }
+
+    .lang.dropdown-name {
+        text-align: center;
     }
 
     .lang.dropdown-item {
@@ -137,7 +137,7 @@
     background: var(--start-btn-bg);
     color:black;
     padding: 1rem 2rem;
-    border-radius: 12px;
+    border-radius: 16px;
     cursor: pointer;
     border: none;
     font-size: 1.2rem;

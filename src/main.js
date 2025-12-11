@@ -33,10 +33,12 @@ startSubtitleRotation(true); // Start rotating subtitle using app data
 // Open popup when clicking start
 document.querySelector(".start-button").addEventListener("click", () => {
     if (!window.fromSelected || !window.toSelected) {
-        alert("Select both languages first!");
+        //alert("Select both languages first!");
+        document.getElementById("select-message").classList.remove("hidden");
         return;
     }
     
+    document.getElementById("select-message").classList.add("hidden");
     app.popup.open();
 })
 

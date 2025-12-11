@@ -7,6 +7,7 @@
     box-sizing: border-box;
     overflow: hidden;
     display: grid;
+    gap:2rem;
 }
 
 .upper-container {
@@ -49,6 +50,22 @@ body {
     font-size: var(--font-subtitle-size);
     margin-top: .5rem;
     opacity: 0.9;
+    animation: scaling linear .75s infinite alternate;
+    box-sizing: border-box;
+}
+
+.start-pg .select-message {
+    color: red;
+    margin-bottom: 0;
+}
+
+.start-pg .select-message.hidden {
+    opacity: 0;
+}
+
+@keyframes scaling {
+    from { color: azur;} 
+    to { color: rgb(196, 196, 196);} 
 }
 
 .start-button-container {

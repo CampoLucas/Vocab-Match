@@ -19,17 +19,20 @@
         <div class="start-pg" id="start-page">
             <div class="upper-container">
                 <h1 class="title" id="fileInput">Vocab Match!</h1>
-                <h2 class="subtitle" id="subtitle">Loading...</h2>
+                <div style="box-sizing: border-box; display: flex; height: 4rem; padding-inline: .5rem; text-align: center;">
+                    <h2 class="subtitle" id="subtitle">Loading...</h2>
+                </div>
             </div>
 
 
             <div class="bottom-container">
+                <p id="select-message" class="select-message hidden">Please select languages</p>
                 <div class="lang container">
                     <!-- Left language box -->
                     <div class="lang dropdown-container">
                         <div class="lang dropdown" id="from-lang">
                             <img class="lang icon flag disabled" id="from-flag" src="" alt="" />
-                            <span class="lang-name" id="from-name">Select language</span>
+                            <span class="lang dropdown-name" id="from-name">Select language</span>
                         </div>
                         <div class="lang dropdown-list disabled" id="dropdown-from"></div>
                     </div>
@@ -41,7 +44,7 @@
                     <div class="lang dropdown-container">
                         <div class="lang dropdown" id="to-lang">
                             <img class="lang icon flag disabled" id="to-flag" src="" alt="" />
-                            <span class="lang-name" id="to-name">Select language</span>
+                            <span class="lang dropdown-name" id="to-name">Select language</span>
                         </div>
                         <div class="lang dropdown-list disabled" id="dropdown-to"></div>
                     </div>
@@ -102,7 +105,7 @@
     <template id="lang-item">
         <div class="lang dropdown-item" onclick="">
             <img class="lang icon flag" src="" />
-            <span class="lang dropdown-name"></span>
+            <span class="lang dropdown-name element"></span>
         </div>
     </template>
 
