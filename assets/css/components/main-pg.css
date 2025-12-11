@@ -154,3 +154,8 @@
     transition: background-color var(--transition-speed), border-width .075s;
     border-color: #0e4d9496;
 }
+
+.start-button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

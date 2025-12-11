@@ -34,6 +34,9 @@ export class PopupManager {
 
     // Switch popup to setup
     showSetup() {
+        this.setPlayButtonText("Play");
+        this.enablePlayButton();
+        
         this.setupView.classList.remove(hiddenView);
         this.gameView.classList.add(hiddenView);
 
@@ -48,10 +51,33 @@ export class PopupManager {
 
     // Switch popup to game
     showGame() {
+        if (!window.app) return;
+
+        this.setPlayButtonText("Next");
+        this.disablePlayButton();
+
+        const settings = window.app.setupUI.getSettings();
+        const game = window.app.startGame(settings);
+        
+        
         this.setupView.classList.add(hiddenView);
         this.gameView.classList.remove(hiddenView);
 
         // Update title
         document.getElementById("game-title").textContent = "Exercise";
+    }
+
+    setPlayButtonText(text) {
+        this.playBtn.textContent = text;
+    }
+
+    disablePlayButton() {
+        this.playBtn.classList.add("disabled");
+        this.playBtn.disabled = true;
+    }
+
+    enablePlayButton() {
+        this.playBtn.classList.remove("disabled");
+        this.playBtn.disabled = false;
     }
 }

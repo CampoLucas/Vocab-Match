@@ -17,6 +17,16 @@ export class SetupUIManager {
         this.createLevelSelector(container);
     }
 
+    getSettings() {
+        return {
+            modeId: this.selectedModeId,
+            categoryId: this.selectedCategoryId,
+            levelIndex: this.selectedLevel,
+            fromLang: window.fromSelected,
+            toLang: window.toSelected
+        };
+    }
+
     createGameModeSelector(container) {
         const modes = this.app.modes.getCompatibleModes(window.toSelected);
 

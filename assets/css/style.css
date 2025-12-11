@@ -81,6 +81,10 @@
 
 /* Game tile */
 
+.match-title {
+    color: black;
+}
+
 .game-tile {
     background: #868686;
     border-radius: 10px;

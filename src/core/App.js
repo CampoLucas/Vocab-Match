@@ -3,6 +3,7 @@ import { TemplateLoader } from "./TemplateLoader.js";
 import { PopupManager } from "./PopUpManager.js";
 import { GameModeManager } from "./GameModeManager.js";
 import { SetupUIManager } from "../ui/SetupUIManager.js";
+import { MatchingGame } from "../game/MatchingGame.js";
 
 const appDataPath = "./data/app-data.json";
 const catDataPath = "./data/categories.json";
@@ -23,6 +24,10 @@ export class App {
         this.languages = [];
         this.categories = [];
         this.selectPhrases = [];
+
+        this.games = {
+            MatchingGame
+        };
     }
 
     // entry point, loads the data needed at start up
@@ -47,5 +52,21 @@ export class App {
 
         console.log("App initialized")
         console.log(`Loaded game modes: ${this.modes.getAllModes()}`);
+    }
+
+    startGame(settings) {
+        const mode = this.modes.getMode(settings.modeId);
+        const GameClass = this.games[mode.class];
+
+        const game = new GameClass(this, {
+            ...settings,
+            onFinish: () => {
+                this.popup.enablePlayButton();
+                this.popup.setPlayButtonText("Next");
+            } 
+        }, document.getElementById("game-view"));
+        
+        game.start();
+        return game;
     }
 }
