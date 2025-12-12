@@ -18,7 +18,7 @@ export class MatchingGame extends BaseGame {
 
         this.tiles = await this.loadTiles(chosen, fromLang, toLang);
 
-        await this.renderGrid(this.shuffle(this.tiles));
+        await this.render(this.shuffle(this.tiles));
     }
 
     async loadTiles(wordIds, langA, langB) {
