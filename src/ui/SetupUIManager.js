@@ -10,7 +10,6 @@ const lvSelectedEvent = "levelSelected";
 export class SetupUIManager {
     constructor(app) {
         this.app = app;
-        this.selectedModeId = null;
 
         this.gameModeSelector = null;
         this.categorySelector = null;
@@ -48,21 +47,25 @@ export class SetupUIManager {
     }
 
     getSettings() {
-        let categoryId = this.selectedCategoryId;
+        let categoryId = this.categorySelected;
+        let selectedLevel = this.selectedLevel ? this.selectedLevel : 0;
 
         // random category
         if (categoryId === "__random__") {
-            const cats = this.app.modes.getAvailableCategories(
-                this.selectedModeId
-            );
-            const randomCat = cats[Math.floor(Math.random() * cats.length)];
+            const available = this.app.modes.getAvailableCategories(this.selectedMode, window.toLang);
+            const randomCat = available[Math.floor(Math.random() * available.length)];
             categoryId = randomCat.id;
+
+            const random = Math.floor(Math.random() * 5);
+            selectedLevel = random;
         }
+
+        console.log(`level index ${selectedLevel}`);
         
         return {
-            modeId: this.selectedModeId,
+            modeId: this.selectedMode,
             categoryId: categoryId,
-            levelIndex: this.selectedLevel,
+            levelIndex: selectedLevel,
             fromLang: window.fromSelected,
             toLang: window.toSelected
         };
@@ -122,8 +125,6 @@ export class SetupUIManager {
 
     refreshCategorySelector() {
         if (!this.categorySelector) return;
-        console.log(`refresh categories ${this.categorySelected ? this.categorySelected : 0}`);
-
         const available = this.app.modes.getAvailableCategories(this.selectedMode, window.toLang);
 
         const isActive = available && available.length !== 0;
@@ -139,7 +140,6 @@ export class SetupUIManager {
     }
 
     refreshLevelSelector() {
-        console.log("refresh levels");
         if (!this.levelSelector) return;
         let cat = null;
         let isActive = this.categorySelected !== null && this.categorySelected !== randomCategory;
