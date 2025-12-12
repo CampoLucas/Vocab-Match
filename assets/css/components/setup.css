@@ -1,0 +1,41 @@
+:root {
+    --setup-dd-width: 14rem;
+}
+
+.setup.dropdown {
+    width: var(--setup-dd-width);
+    border-style: outset;
+    border-width: 0 0 .25rem 0;
+    border-color: #0e4d9496;
+}
+
+.setup.dropdown-list {
+    width: var(--setup-dd-width);
+}
+
+.setup.dropdown:hover {
+    border-width: 0 0 .1rem 0;
+    background-color: #1a1a1a24;
+}
+
+.setup.dropdown-item {
+    
+}
+
+@media only screen and (orientation: portrait) and (max-width:600px) {
+    :root {
+        --setup-dd-width: 12rem;
+    }
+    
+    .lang-name {
+        text-align: center;
+    }
+    
+    .dropdown-item {
+        align-items: center;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width:1000px) {
+
+}

@@ -1,0 +1,254 @@
+.popup-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    animation: overlay-appear .25s ease;
+    z-index: 999;
+}
+
+.popup-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: 0;
+    animation: overlay-hide .15s ease-in;
+}
+
+.popup-overlay.disabled {
+    display: none;
+    animation: none;
+}
+
+.popup {
+    height: 75svh;
+    width: 50svw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    box-sizing: border-box;
+    animation: popup-appear .35s ease;
+}
+
+@keyframes popup-appear {
+    from { transform: scale(0.8); opacity: 0; }
+    to   { transform: scale(1.0); opacity: 1; }
+}
+
+@keyframes overlay-appear {
+    from { opacity: 0; backdrop-filter: 0; }
+    to { opacity: 1; backdrop-filter: blur(4px); }
+}
+
+@keyframes overlay-hide {
+    from { opacity: 1; backdrop-filter: blur(4px); }
+    to { opacity: 0; backdrop-filter: 0; display: none;}
+}
+
+
+/* settings */
+.settings-bg {
+    padding: .2rem;
+    background-color: rgba(0,0,0,.1);
+    border-style: solid;
+    border-radius: 15px;
+    border-width:2px;
+    border-color: rgba(0,0,0,.2);
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.setting-selector {
+    box-sizing: content-box;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: .15rem;
+}
+
+.setting-selector:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+.setting-selector.disabled {
+    background-color: rgba(125, 125, 125, 0.25);
+}
+
+.setting-selector.disabled .dropdown {
+    border-style: none;
+    background-color: rgba(125,125,125,.25);
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Setup setting selector */
+.setting-title {
+    color:black;
+    margin: 0;
+}
+
+/* Layout */
+
+.setup-top {
+    flex: 0 0 auto;
+    padding: .75rem 1.5rem;
+}
+
+.setup-center {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+.setup-bottom {
+    flex: 0 0 auto;
+    padding: .75rem 1.5rem;
+}
+
+#setup-view,
+#game-view {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#setup-view.hidden-view,
+#game-view.hidden-view {
+    display: none;
+    flex: 0;
+}
+
+/*  */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#game-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #868686;
+}
+
+#game-close-btn {
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
+/* Tile grid */
+
+#game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+/* Game tile */
+
+.match-title {
+    color: black;
+}
+
+.game-tile {
+    background: #868686;
+    border-radius: 10px;
+    padding: 0.7rem 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.05rem;
+    border: 2px solid transparent;
+    /* transition: 0.15s ease; */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+    user-select: none;
+}
+
+.game-tile:hover {
+    background: #e7e7e7;
+}
+
+/* States */
+
+.game-tile.selected {
+    border-color: #3399ff;
+    background: #b6b6b6;
+}
+
+.game-tile.correct {
+    background: #8cff9a !important;
+    border-color: #2f9e44 !important;
+    color: black;
+}
+
+.game-tile.wrong {
+    background: #ffb3b3 !important;
+    border-color: #d62828 !important;
+    color: black;
+}
+
+/* Mobile */
+
+@media only screen and (orientation: portrait) and (max-width: 700px) {
+    .popup {
+        width: 90svw;
+        height: 90svh;
+        padding: .5rem;
+        justify-content: center;
+    }
+
+    #game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-tile {
+        font-size: 1rem;
+        padding: 0.8rem 0.4rem;
+    }
+
+    .setup-top {
+        padding: .25rem;
+    }
+
+    .setup-center {
+        padding-inline: .25rem;
+    }
+
+    .setup-bottom {
+        padding: .25rem;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+    .popup {
+        width: 90svw;
+        height: 90svh;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    #game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-tile {
+        font-size: 1rem;
+        padding: 0.8rem 0.4rem;
+    }
+}
