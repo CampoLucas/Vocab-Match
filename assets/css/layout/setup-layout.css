@@ -74,6 +74,17 @@
     background-color: rgba(0,0,0,.1);
 }
 
+.setting-selector.disabled {
+    background-color: rgba(125, 125, 125, 0.25);
+}
+
+.setting-selector.disabled .dropdown {
+    border-style: none;
+    background-color: rgba(125,125,125,.25);
+    pointer-events: none;
+    cursor: default;
+}
+
 /* Setup setting selector */
 .setting-title {
     color:black;

@@ -6,7 +6,9 @@ const hiddenView = "hidden-view";
 
 export class PopupManager {
     
-    constructor() {
+    constructor(app) {
+        this.app = app;
+
         this.overlay = document.getElementById("game-overlay");
         this.popup = document.getElementById("game-popup");
 
@@ -22,14 +24,14 @@ export class PopupManager {
 
     // Makes overlay visible and shows the setup screen
     open() {
-        this.overlay.classList.remove(hiddenOverlay);
-        this.overlay.classList.remove(disabledOverlay);
+        this.overlay.classList.remove(hiddenOverlay, disabledOverlay);
         this.showSetup();
     }
 
     // Hides the entire popup
     close(){
         this.overlay.classList.add(hiddenOverlay);
+        setTimeout(() => this.overlay.classList.add("disabled"), 150);
     }
 
     // Switch popup to setup

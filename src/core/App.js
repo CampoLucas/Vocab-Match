@@ -17,7 +17,7 @@ export class App {
         this.json = new JSONLoader();
         this.templates = new TemplateLoader();
         this.popup = new PopupManager();
-        this.modes = new GameModeManager();
+        this.modes = new GameModeManager(this);
         this.setupUI = new SetupUIManager(this);
 
         // data loaded asynchronously

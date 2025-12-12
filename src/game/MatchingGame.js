@@ -4,51 +4,54 @@ export class MatchingGame extends BaseGame {
     async load() {
         const { categoryId, levelIndex, fromLang, toLang } = this.settings;
 
-        const category = this.app.categories.find(c => c.id === categoryId);
-        const levelObj = category.levels[levelIndex];
-        const wordIds = Object.values(levelObj)[0];
-        const shuffled = [...wordIds].sort(() => Math.random() - 0.5);
+        const category = this.app.modes.getCategory(categoryId);
+        if (!category) throw new Error(`Category not found: ${categoryId}`);
 
-        // Take 4 words
-        const pairCount = 4;
-        const selectedIds = shuffled.slice(0, pairCount);
+        const level = category.levels[levelIndex]
+        if (!level) throw new Error(`Level not found: ${levelIndex}`);
 
-        // Load lenguages
-        const dictA = await this.app.json.load(`./data/lang/${fromLang}.json`);
-        const dictB = await this.app.json.load(`./data/lang/${toLang}.json`);
+        const words = Object.values(level)[0];
+        if (!words || !words.length) throw new Error("Empty level");
 
-        const wordsA = dictA.translations;
-        const wordsB = dictB.translations;
+        const count = 4;
+        const chosen = this.shuffle(words).slice(0, count);
 
-        // Build the internal tile data
-        this.tiles = [
-            ...selectedIds.map(id => ({ id, lang: fromLang, display: wordsA[id] })),
-            ...selectedIds.map(id => ({ id, lang: toLang,  display: wordsB[id] }))
-        ].sort(() => Math.random() - 0.5); // Shuffle
+        this.tiles = await this.loadTiles(chosen, fromLang, toLang);
+
+        await this.renderGrid(this.shuffle(this.tiles));
     }
 
-    async render() {
+    async loadTiles(wordIds, langA, langB) {
+
+        const fileA = await fetch(`./data/lang/${langA}.json`).then(r => r.json());
+        const fileB = await fetch(`./data/lang/${langB}.json`).then(r => r.json());
+
+        return [
+            ...wordIds.map(id => ({ id, text: fileA.translations[id] })),
+            ...wordIds.map(id => ({ id, text: fileB.translations[id] }))
+        ];
+    }
+
+    async render(tiles) {
         const html = await this.app.templates.get("matching-base");
         this.container.innerHTML = html;
 
         this.grid = this.container.querySelector("#game-grid");
+        this.grid.innerHTML = "";
+        
         this.first = null;
         this.locked = false;
 
         // Create tile DOM elements WITHOUT IDs
-        this.tiles.forEach(tile => {
-            const el = document.createElement("div");
-            el.classList.add("game-tile");
+        tiles.forEach(tile => {
+            const btn = document.createElement("div");
+            btn.classList.add("game-tile");
+            btn.textContent = tile.text;
 
-            el.textContent =
-                typeof tile.display === "string"
-                ? tile.display
-                : tile.display.kanji ?? tile.display.kana;
+            tile.element = btn; // keep connection inside JS only
 
-            tile.element = el; // keep connection inside JS only
-
-            el.addEventListener("click", () => this.select(tile));
-            this.grid.appendChild(el);
+            btn.addEventListener("click", () => this.onTile(btn, tile.id));
+            this.grid.appendChild(btn);
         });
     }
 
@@ -89,6 +92,43 @@ export class MatchingGame extends BaseGame {
         this.checkWin();
     }
 
+    onTile(btn, id) {
+
+        if (this.locked) return;
+        if (btn.classList.contains("correct")) return;
+
+        if (!this.selectedTile) {
+            this.selectedTile = { btn, id };
+            btn.classList.add("selected");
+            return;
+        }
+
+        const first = this.selectedTile;
+        const second = { btn, id };
+
+        first.btn.classList.remove("selected");
+        this.selectedTile = null;
+
+        if (first.id === second.id && first.btn !== second.btn) {
+
+            first.btn.classList.add("correct");
+            second.btn.classList.add("correct");
+
+            this.checkWin();
+        } else {
+
+            this.locked = true;
+            first.btn.classList.add("wrong");
+            second.btn.classList.add("wrong");
+
+            setTimeout(() => {
+                first.btn.classList.remove("wrong");
+                second.btn.classList.remove("wrong");
+                this.locked = false;
+            }, 900);
+        }
+    }
+
     // Check if all tiles are marked correct
     checkWin() {
         const total = this.tiles.length;
@@ -101,6 +141,12 @@ export class MatchingGame extends BaseGame {
 
     async start() {
         await this.load();
-        await this.render();
+        //await this.render();
+    }
+
+    shuffle(arr) {
+        return arr.map(x => ({ x, r: Math.random() }))
+                  .sort((a, b) => a.r - b.r)
+                  .map(o => o.x);
     }
 }

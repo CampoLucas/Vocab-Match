@@ -17,7 +17,8 @@
             "class": "CategoryCompletionGame",
             "requires": null,
             "options": {
-                "pairCounts": [3, 4, 6]
+                "pairCounts": [3, 4, 6],
+                "disabled": true
             }
         },
         {
@@ -33,7 +34,8 @@
                         "languages": ["jp"],
                         "categories": ["jlpt-n5", "jlpt-n4", "jlpt-n3", "jlpt-n2", "jlpt-n1"]
                     }
-                ]
+                ],
+                "disabled": true
             }
             
         },
@@ -44,7 +46,8 @@
             "class": "MeaningChoiceGame",
             "requires": null,
             "options": {
-                "choices": 4
+                "choices": 4,
+                "disabled": true
             }
         },
         {
@@ -60,7 +63,8 @@
                         "languages": ["jp"],
                         "categories": ["jlpt-n5", "jlpt-n4", "jlpt-n3", "jlpt-n2", "jlpt-n1"]
                     }
-                ]
+                ],
+                "disabled": true
             }
         },
         {
@@ -75,7 +79,8 @@
                         "languages": ["jp"],
                         "categories": ["jlpt-n5", "jlpt-n4", "jlpt-n3", "jlpt-n2", "jlpt-n1"]
                     }
-                ]
+                ],
+                "disabled": true
             }
         }
     ]

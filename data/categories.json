@@ -130,7 +130,10 @@
                 { "level4": [] },
                 { "level5": [] }
             ],
-            "language": ["jp"]
+            "language": ["jp"],
+            "options": {
+                "disabled": true
+            }
         },
         {
             "id": "jlpt-n4",
@@ -142,7 +145,10 @@
                 { "level4": [] },
                 { "level5": [] }
             ],
-            "language": ["jp"]
+            "language": ["jp"],
+            "options": {
+                "disabled": true
+            }
         },
         {
             "id": "jlpt-n3",
@@ -154,7 +160,10 @@
                 { "level4": [] },
                 { "level5": [] }
             ],
-            "language": ["jp"]
+            "language": ["jp"],
+            "options": {
+                "disabled": true
+            }
         },
         {
             "id": "jlpt-n2",
@@ -166,7 +175,10 @@
                 { "level4": [] },
                 { "level5": [] }
             ],
-            "language": ["jp"]
+            "language": ["jp"],
+            "options": {
+                "disabled": true
+            }
         },
         {
             "id": "jlpt-n1",
@@ -178,7 +190,10 @@
                 { "level4": [] },
                 { "level5": [] }
             ],
-            "language": ["jp"]
+            "language": ["jp"],
+            "options": {
+                "disabled": true
+            }
         }
     ]
 }
