@@ -56,6 +56,9 @@ export class SetupUIManager {
             const randomCat = available[Math.floor(Math.random() * available.length)];
             categoryId = randomCat.id;
 
+        }
+        
+        if (selectedLevel === -1) {
             const random = Math.floor(Math.random() * 5);
             selectedLevel = random;
         }
@@ -142,24 +145,20 @@ export class SetupUIManager {
     refreshLevelSelector() {
         if (!this.levelSelector) return;
         let cat = null;
-        let isActive = this.categorySelected !== null && this.categorySelected !== randomCategory;
+        let isActive = this.categorySelected !== null;
         
-        if (isActive) {
-            // category not found or disabled
-            cat = this.app.modes.getCategory(this.categorySelected);
-            if (!cat || !cat.levels || !Array.isArray(cat.levels)) {
-                isActive = false;
-            }
-        }
-
         this.levelSelector.setActive(isActive);
         if (!isActive) return;
 
         // Build items for each level
-        const items = cat.levels.map((lvl, i) => ({
-            id: i,
-            label: "Level " + (i + 1)
-        }));
+        const items = [
+            { id: -1, label: "Random" },
+            { id: 0, label: "Level 1" },
+            { id: 1, label: "Level 2" },
+            { id: 2, label: "Level 3" },
+            { id: 3, label: "Level 4" },
+            { id: 4, label: "Level 5" }
+        ]
 
         this.levelSelector.setItems(items);
     }
