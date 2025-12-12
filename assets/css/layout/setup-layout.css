@@ -23,15 +23,15 @@
 }
 
 .popup {
-    background: white;
     height: 75svh;
     width: 50svw;
-    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    background: white;
     display: flex;
     flex-direction: column;
-    animation: popup-appear .35s ease;
-    padding: 1.5rem;
     border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    box-sizing: border-box;
+    animation: popup-appear .35s ease;
 }
 
 @keyframes popup-appear {
@@ -58,6 +58,11 @@
     border-radius: 15px;
     border-width:2px;
     border-color: rgba(0,0,0,.2);
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .setting-selector {
@@ -89,4 +94,161 @@
 .setting-title {
     color:black;
     margin: 0;
+}
+
+/* Layout */
+
+.setup-top {
+    flex: 0 0 auto;
+    padding: .75rem 1.5rem;
+}
+
+.setup-center {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+.setup-bottom {
+    flex: 0 0 auto;
+    padding: .75rem 1.5rem;
+}
+
+#setup-view,
+#game-view {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#setup-view.hidden-view,
+#game-view.hidden-view {
+    display: none;
+    flex: 0;
+}
+
+/*  */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#game-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #868686;
+}
+
+#game-close-btn {
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
+/* Tile grid */
+
+#game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+/* Game tile */
+
+.match-title {
+    color: black;
+}
+
+.game-tile {
+    background: #868686;
+    border-radius: 10px;
+    padding: 0.7rem 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.05rem;
+    border: 2px solid transparent;
+    /* transition: 0.15s ease; */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+    user-select: none;
+}
+
+.game-tile:hover {
+    background: #e7e7e7;
+}
+
+/* States */
+
+.game-tile.selected {
+    border-color: #3399ff;
+    background: #b6b6b6;
+}
+
+.game-tile.correct {
+    background: #8cff9a !important;
+    border-color: #2f9e44 !important;
+    color: black;
+}
+
+.game-tile.wrong {
+    background: #ffb3b3 !important;
+    border-color: #d62828 !important;
+    color: black;
+}
+
+/* Mobile */
+
+@media only screen and (orientation: portrait) and (max-width: 700px) {
+    .popup {
+        width: 90svw;
+        height: 90svh;
+        padding: .5rem;
+        justify-content: center;
+    }
+
+    #game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-tile {
+        font-size: 1rem;
+        padding: 0.8rem 0.4rem;
+    }
+
+    .setup-top {
+        padding: .25rem;
+    }
+
+    .setup-center {
+        padding-inline: .25rem;
+    }
+
+    .setup-bottom {
+        padding: .25rem;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+    .popup {
+        width: 90svw;
+        height: 90svh;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    #game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-tile {
+        font-size: 1rem;
+        padding: 0.8rem 0.4rem;
+    }
 }

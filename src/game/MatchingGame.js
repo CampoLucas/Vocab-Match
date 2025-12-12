@@ -46,7 +46,12 @@ export class MatchingGame extends BaseGame {
         tiles.forEach(tile => {
             const btn = document.createElement("div");
             btn.classList.add("game-tile");
-            btn.textContent = tile.text;
+
+            if (typeof tile.text === "string") {
+                btn.textContent = tile.text;
+            } else {
+                btn.textContent = tile.text.kanji ?? tile.text.kana;
+            }
 
             tile.element = btn; // keep connection inside JS only
 
