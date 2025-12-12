@@ -1,0 +1,16 @@
+{
+    "templates": [
+        {
+            "id": "matching-base",
+            "path": "./assets/templates/matching-base.html"
+        },
+        {
+            "id": "choice-base",
+            "path": "./assets/templates/choice-base.html"
+        },
+        {
+            "id": "flashcard-basic",
+            "path": "./assets/templates/flashcard-basiv.html"
+        }
+    ]
+}

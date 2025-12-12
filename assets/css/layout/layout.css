@@ -1,25 +1,33 @@
+@import url("./game-pop-up.css");
+@import url("./setup-layout.css");
+
 .start-pg {
     height: 100svh;
     width: 100svw;
     box-sizing: border-box;
     overflow: hidden;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
 }
 
 .upper-container {
-   display: flex;
+    flex: 1 1 auto;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: start;
+    
     padding-top: 10svh;
 }
 
 .bottom-container {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: end;
+    
     padding-bottom: 35svh;
+    
 }
 
 body {
@@ -39,22 +47,30 @@ body {
 .start-pg .title {
     font-size: var(--font-title-size);
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .start-pg .subtitle {
     font-size: var(--font-subtitle-size);
     margin-top: .5rem;
     opacity: 0.9;
+    animation: scaling linear .75s infinite alternate;
+    box-sizing: border-box;
+    margin-bottom: 0;
 }
 
-.language-selector {
-    align-items: center;
-    gap: 1rem;
+.start-pg .select-message {
+    color: red;
+    margin-bottom: 0;
 }
 
-.lang-container {
-    position: relative;
-    display: inline-block;
+.start-pg .select-message.hidden {
+    opacity: 0;
+}
+
+@keyframes scaling {
+    from { color: azur;} 
+    to { color: rgb(196, 196, 196);} 
 }
 
 .start-button-container {

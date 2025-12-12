@@ -1,28 +1,40 @@
+@import url("./setup.css");
+@import url("./main-pg.css");
+
 :root {
-    --lang-box-bg: rgba(255,255,255,0.15);
-    --lang-box-bg-hover: rgba(255,255,255,0.15);
-    
-    --lang-font-size: 1.2rem;
-    
     --arrow-size: 32px;
     --arrow-filter: var(--filter-white);
     --flag-size: 32px;
     
-    --dropdown-bg: rgba(255,255,255,0.9);
+    --dropdown-name-font-size: 1rem;
+    --dropdown-name-font-color: #ffffff;
+    
+    --dropdown-bg: rgba(108, 108, 108, 0.861);
+    --dropdown-bg-hover: rgba(153, 153, 153, 0.753);
+    
+    --dropdown-list-bg: rgba(110, 110, 110, 0.9);
+    --dropdown-list-item-height: 2rem;
+    
     --dropdown-item-height: 2rem;
-    --dropdown-item-width: 9rem;
+    --dropdown-item-width: 12rem;
     --dropdown-item-bg-hover: rgba(0,0,0,0.1);
     --dropdown-item-bg-selected: rgba(95, 95, 95, 0.1);
 
-    --start-btn-bg: white;
+    
 }
 
-.lang-box {
+.dropdown,
+.dropdown-list,
+.dropdown-item {
+    box-sizing: border-box;
+}
+
+.dropdown {
     width: var(--dropdown-item-width);
     height: var(--dropdown-item-height);
-    background-color: var(--lang-box-bg);
-    border-radius: 12px;
-    padding: 0.7rem 1.2rem;
+    background-color: var(--dropdown-bg);
+    border-radius: 10px;
+    padding: 0.25rem .5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -31,26 +43,32 @@
     overflow: hidden;
 }
 
-.lang-box:hover {
-    background-color: var(--lang-box-bg-hover);
+.dropdown:hover {
+    background-color: var(--dropdown-bg-hover);
 }
 
-.lang-name {
-    font-size: var(--lang-font-size);
+.dropdown-name {
+    font-size: var(--dropdown-name-font-size);
+    color: var(--dropdown-name-font-color);
 }
 
 /* Dropdown */
 
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown-list {
     position: absolute;
-    background: var(--dropdown-bg);
+    background: var(--dropdown-list-bg);
     color:black;
     border-radius: 10px;
     padding: 0.5rem 0;
     margin-top: 0.5rem;
     flex-direction: column;
     z-index: 10;
-    width: 100%;
+    width: var(--dropdown-item-width);
 }
 
 .dropdown-list.disabled {
@@ -62,8 +80,8 @@
 }
 
 .dropdown-item {
-    height: var(--dropdown-item-height);
-    padding: 0.7rem 1rem;
+    height: var(--dropdown-list-item-height);
+    padding: 0.5rem 1rem;
     display: flex;
     gap: .5rem;
     cursor: pointer;
@@ -79,20 +97,7 @@
     background: var(--dropdown-item-bg-hover);
 }
 
-.start-button {
-    background: var(--start-btn-bg);
-    color:black;
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    cursor: pointer;
-    border: none;
-    font-size: 1.2rem;
-    transition: transform var(--transition-speed);
-}
 
-.start-button:hover {
-  transform: scale(1.05);
-}
 
 /* Icons */
 .icon {
@@ -134,19 +139,19 @@
 }
 
 .icon.arrow-1 {
-    background: url("../images/icons/arrows-left-right01.svg");
+    background: url("../../assets/img/icons/arrows-left-right01.svg");
 }
 
 .icon.arrow-2 {
-    background: url("../images/icons/arrows-left-right02.svg");
+    background: url("../../assets/img/icons/arrows-left-right02.svg");
 }
 
 .icon.arrow-3 {
-    background: url("../images/icons/arrows-left-right03.svg");
+    background: url("../../img/icons/arrows-left-right03.svg");
 }
 
 .icon.arrow-4 {
-    background: url("../images/icons/arrows-left-right04.svg");
+    background: url("../../assets/img/icons/arrows-left-right04.svg");
 }
 
 .icon.flag {
@@ -166,10 +171,6 @@
         --dropdown-item-height: 2rem;
         --dropdown-item-width: 6rem;
         --lang-font-size: .9rem;
-    }
-    
-    .lang-name {
-        text-align: center;
     }
     
     .dropdown-item {

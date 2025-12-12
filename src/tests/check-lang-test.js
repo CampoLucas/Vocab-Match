@@ -47,8 +47,8 @@ async function tryFindMissingWords(categoryId, language){
     try {
         // Load both JSONs
         const [catResponse, langResponse] = await Promise.all([
-            fetch("./assets/data/categories.json"),
-            fetch(`./assets/data/lang/${language}.json`)
+            fetch("./data/categories.json"),
+            fetch(`./data/lang/${language}.json`)
         ]);
 
         if (!catResponse.ok){
