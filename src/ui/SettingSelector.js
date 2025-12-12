@@ -67,6 +67,14 @@ export class SettingSelector {
             this.dropdownList.classList.toggle("disabled");
         });
 
+        document.addEventListener("click", (event) => {
+            const clickedInside = this.dropdownBtn.contains(event.target) || this.dropdownList.contains(event.target);
+            
+            if (!clickedInside) {
+                this.dropdownList.classList.add("disabled");
+            }
+        });
+
         this.refreshItems(this.data.items);
     }
 
@@ -75,7 +83,7 @@ export class SettingSelector {
         
         const label = this.dropdownLabel;
         if (!items || items.length === 0) {
-            this.data.currentIndex = null;
+            // this.data.currentIndex = null;
             label.textContent = "No items";
             
             return;

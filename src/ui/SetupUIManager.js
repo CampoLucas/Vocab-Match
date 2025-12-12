@@ -110,6 +110,7 @@ export class SetupUIManager {
         if (!this.levelSelector) {
             this.levelSelector = new SettingSelector(settingsSelectorTemplate, {
                 title: "Difficulty",
+                defaultIndex: 0,
                 onSelect: (level) => this.onLevelSelected(level)
             });
 
