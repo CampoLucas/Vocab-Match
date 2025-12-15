@@ -48,7 +48,7 @@ export class App {
         const modesJson = await this.json.load(gameModesPath);
         this.modes.loadModes(modesJson.modes);
 
-        this.setupUI.refresh();
+        //this.setupUI.refresh();
 
         console.log("App initialized")
         console.log(`Loaded game modes: ${this.modes.getAllModes()}`);
@@ -68,5 +68,9 @@ export class App {
         
         game.start();
         return game;
+    }
+
+    getLangById(id) {
+        return this.languages.find(l => l.id === id) || null;
     }
 }

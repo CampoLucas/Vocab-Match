@@ -21,7 +21,19 @@
             "icon": "./assets/img/icons/flags/jp-flag.svg",
             "iconAlt": "Japanese flag",
             "words": "./data/lang/en.json",
-            "tested": 0
+            "tested": 0,
+            "options": [
+                {
+                    "id": "reading",
+                    "title": "Reading",
+                    "items": [
+                        { "id": "kanji", "label": "Kanji" },
+                        { "id": "furigana", "label": "Furigana" },
+                        { "id": "kana", "label": "Kana" },
+                        { "id": "romaji", "label": "Romaji" }
+                    ]
+                }
+            ]
         },
         {
             "id": "it",

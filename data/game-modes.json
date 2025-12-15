@@ -6,9 +6,19 @@
             "template": "matching-base",
             "class": "MatchingGame",
             "requires": null,
-            "options": {
-                "pairCounts": [2, 3, 4, 6]
-            }
+            "options": [
+                {
+                    "id": "pairCount",
+                    "title": "Pairs",
+                    "items": [
+                        { "id": 3, "label": "3 pairs" },
+                        { "id": 4, "label": "4 pairs" },
+                        { "id": 5, "label": "5 pairs" },
+                        { "id": 6, "label": "6 pairs" }
+                    ],
+                    "defaultIndex": 2
+                }
+            ]
         },
         {
             "id": "category-completion",
@@ -16,8 +26,20 @@
             "template": "matching-base",
             "class": "CategoryCompletionGame",
             "requires": null,
-            "options": {
-                "pairCounts": [3, 4, 6],
+            "options": [
+                {
+                    "id": "pairCount",
+                    "title": "Pairs",
+                    "items": [
+                        { "id": 3, "label": "3 pairs" },
+                        { "id": 4, "label": "4 pairs" },
+                        { "id": 5, "label": "5 pairs" },
+                        { "id": 6, "label": "6 pairs" }
+                    ],
+                    "defaultIndex": 2
+                }
+            ],
+            "config": {
                 "disabled": true
             }
         },
@@ -27,8 +49,20 @@
             "template": "matching-base",
             "class": "KanjiMatchGame",
             "requires": ["jp"],
-            "options": {
-                "pairCounts": [2, 3, 4, 6],
+            "options": [
+                {
+                    "id": "pairCount",
+                    "title": "Pairs",
+                    "items": [
+                        { "id": 3, "label": "3 pairs" },
+                        { "id": 4, "label": "4 pairs" },
+                        { "id": 5, "label": "5 pairs" },
+                        { "id": 6, "label": "6 pairs" }
+                    ],
+                    "defaultIndex": 2
+                }
+            ],
+            "config": {
                 "extraCategories": [
                     {
                         "languages": ["jp"],
@@ -45,8 +79,19 @@
             "template": "choice-base",
             "class": "MeaningChoiceGame",
             "requires": null,
-            "options": {
-                "choices": 4,
+            "options": [
+                {
+                    "id": "lives",
+                    "title": "Lives",
+                    "items": [
+                        { "id": 0, "label": "no lives"},
+                        { "id": 1, "label": "1 lives" },
+                        { "id": 2, "label": "2 lives" },
+                        { "id": 3, "label": "3 lives" }
+                    ]
+                }
+            ],
+            "config": {
                 "disabled": true
             }
         },
@@ -56,8 +101,19 @@
             "template": "choice-base",
             "class": "KanjiChoiceGame",
             "requires": ["jp"],
-            "options": {
-                "choices": 4,
+            "options": [
+                {
+                    "id": "lives",
+                    "title": "Lives",
+                    "items": [
+                        { "id": 0, "label": "no lives"},
+                        { "id": 1, "label": "1 lives" },
+                        { "id": 2, "label": "2 lives" },
+                        { "id": 3, "label": "3 lives" }
+                    ]
+                }
+            ],
+            "config": {
                 "extraCategories": [
                     {
                         "languages": ["jp"],
@@ -73,7 +129,7 @@
             "template": "flashcard-basic",
             "class": "FlashcardGame",
             "requires": null,
-            "options": {
+            "config": {
                 "extraCategories": [
                     {
                         "languages": ["jp"],

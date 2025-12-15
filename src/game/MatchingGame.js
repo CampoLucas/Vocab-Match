@@ -2,7 +2,7 @@ import { BaseGame } from "./BaseGame.js";
 
 export class MatchingGame extends BaseGame {
     async load() {
-        const { categoryId, levelIndex, fromLang, toLang } = this.settings;
+        const { categoryId, levelIndex, fromLang, toLang, options } = this.settings;
 
         const category = this.app.modes.getCategory(categoryId);
         if (!category) throw new Error(`Category not found: ${categoryId}`);
@@ -13,7 +13,7 @@ export class MatchingGame extends BaseGame {
         const words = Object.values(level)[0];
         if (!words || !words.length) throw new Error("Empty level");
 
-        const count = 4;
+        const count = options.pairCount ?? 4;
         const chosen = this.shuffle(words).slice(0, count);
 
         this.tiles = await this.loadTiles(chosen, fromLang, toLang);
@@ -22,9 +22,10 @@ export class MatchingGame extends BaseGame {
     }
 
     async loadTiles(wordIds, langA, langB) {
-
-        const fileA = await fetch(`./data/lang/${langA}.json`).then(r => r.json());
-        const fileB = await fetch(`./data/lang/${langB}.json`).then(r => r.json());
+        const fileA = await this.app.json.load(`./data/lang/${langA}.json`);
+        const fileB = await this.app.json.load(`./data/lang/${langB}.json`);
+        // const fileA = await fetch(`./data/lang/${langA}.json`).then(r => r.json());
+        // const fileB = await fetch(`./data/lang/${langB}.json`).then(r => r.json());
 
         return [
             ...wordIds.map(id => ({ id, text: fileA.translations[id] })),
@@ -50,7 +51,9 @@ export class MatchingGame extends BaseGame {
             if (typeof tile.text === "string") {
                 btn.textContent = tile.text;
             } else {
-                btn.textContent = tile.text.kanji ?? tile.text.kana;
+                const readingMode = this.settings.options?.reading ?? "kanji";
+                this.japaneseReading(btn, readingMode, tile);
+                //btn.textContent = tile.text.kanji ?? tile.text.kana;
             }
 
             tile.element = btn; // keep connection inside JS only
@@ -58,6 +61,40 @@ export class MatchingGame extends BaseGame {
             btn.addEventListener("click", () => this.onTile(btn, tile.id));
             this.grid.appendChild(btn);
         });
+    }
+
+    japaneseReading(btn, reading, tile) {
+        switch (reading) {
+            case "kana":
+                btn.textContent = tile.text.kana;
+                break;
+            case "romaji":
+                btn.textContent = tile.text.romaji;
+                break;
+            case "furigana":
+                const furigana = tile.text.furigana;
+                if (!furigana || furigana.length === 0){
+                    btn.textContent = tile.text.kana;
+                } else {
+                    btn.innerHTML = this.renderFurigana(tile.text.furigana);
+                }
+                break;
+            case "kanji":
+            default:
+                btn.textContent = tile.text.kanji ?? tile.text.kana;
+                break;
+        }
+    }
+
+    renderFurigana(furigana) {
+        return furigana.map(part => {
+            if (!part.reading) {
+                return part.char;
+            }
+
+            return `<ruby>${part.char}<rt>${part.reading}</rt></ruby>`;
+        })
+        .join("");
     }
 
     select(tile) {

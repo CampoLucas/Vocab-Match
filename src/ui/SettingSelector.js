@@ -128,4 +128,10 @@ export class SettingSelector {
             this.data.onSelect(item.id);
         }
     }
+
+    getValue() {
+        if (this.data.currentIndex === null) return null;
+        const item = this.data.items[this.data.currentIndex];
+        return item ? item.id : null;
+    }
 }

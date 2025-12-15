@@ -4581,7 +4581,8 @@
             "kanji": "憎しみ",
             "kana": "にくしみ",
             "furigana": [
-                { "char": "憎しみ", "reading": "にくしみ" }
+                { "char": "憎", "reading": "にく" },
+                { "char": "しみ", "reading": null }
             ],
             "romaji": "nikusimi"
         },
@@ -4629,7 +4630,8 @@
             "kanji": "良い",
             "kana": "よい",
             "furigana": [
-                { "char": "良い", "reading": "よい" }
+                { "char": "良", "reading": "よ" },
+                { "char": "い", "reading": null }
             ],
             "romaji": "yoi"
         },

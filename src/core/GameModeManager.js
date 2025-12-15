@@ -9,7 +9,7 @@ export class GameModeManager {
     // Only the modes that are not disabled and match the language requirements
     getAvailableModes(lang) {
         return this.modes.filter(mode => {
-            if (mode.options?.disabled) return false;
+            if (mode.config?.disabled) return false;
             if (!mode.requires) return true;
             return mode.requires.every(req => lang);
         })
@@ -23,7 +23,7 @@ export class GameModeManager {
         const langReq = mode.requires || [];
 
         return this.app.categories.filter(c => {
-            if (c.options?.disabled) return false;
+            if (c.config?.disabled) return false;
             if (c.language.includes("any")) return true;
             return langReq.some(r => c.language.includes(r));
         });
@@ -59,7 +59,7 @@ export class GameModeManager {
             
             // Exclude disabled modes
             //if (mode.disabled === true) return false;
-            if (mode.options?.disabled === true) return false;
+            if (mode.config?.disabled === true) return false;
 
             // Mode requires specific languages
             if (mode.requires && 

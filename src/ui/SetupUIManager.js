@@ -1,4 +1,5 @@
 import { SettingSelector } from "./SettingSelector.js";
+import { SettingsGroup } from "./SettingsGroup.js";
 
 const randomCategory = "__random__";
 const settingsSelectorTemplate = "setup-setting-selector";
@@ -34,44 +35,93 @@ export class SetupUIManager {
 
     // Called when popup opens
     refresh() {
+        console.log("hey")
         const container = document.getElementById("setup-settings");
         container.innerHTML = "";
 
         this.gameModeSelector = null;
         this.categorySelector = null;
         this.levelSelector = null;
+        this.modeSettings = null;
+        this.langSettings = null;
 
-        this.setGameModeSelector(container);
-        this.setCategorySelector(container);
-        this.setLevelSelector(container);
+        this.setMainSettings(container);
+
+        this.setModeSettings(container);
     }
 
     getSettings() {
         let categoryId = this.categorySelected;
-        let selectedLevel = this.selectedLevel ? this.selectedLevel : 0;
+        let selectedLevel = this.selectedLevel ?? 0;
 
         // random category
         if (categoryId === "__random__") {
             const available = this.app.modes.getAvailableCategories(this.selectedMode, window.toLang);
             const randomCat = available[Math.floor(Math.random() * available.length)];
             categoryId = randomCat.id;
-
         }
         
         if (selectedLevel === -1) {
-            const random = Math.floor(Math.random() * 5);
-            selectedLevel = random;
+            selectedLevel = Math.floor(Math.random() * 5);
         }
 
-        console.log(`level index ${selectedLevel}`);
+        const modeOptions = this.modeSettings
+            ? this.modeSettings.getSettings()
+            : {};
+
+        const langOptions = this.langSettings
+            ? this.langSettings.getSettings()
+            : {};
         
         return {
             modeId: this.selectedMode,
             categoryId: categoryId,
             levelIndex: selectedLevel,
             fromLang: window.fromSelected,
-            toLang: window.toSelected
+            toLang: window.toSelected,
+            options: {
+                ...modeOptions,
+                ...langOptions
+            }
         };
+    }
+
+    setMainSettings(container) {
+        this.setGameModeSelector(container);
+        this.setCategorySelector(container);
+        this.setLevelSelector(container);
+
+        this.setModeSettings(container);
+        this.setLanguageSettings(container);
+    }
+
+    setModeSettings(container) {
+        if (!this.modeSettings) {
+            this.modeSettings = new SettingsGroup(settingsSelectorTemplate);
+            container.appendChild(this.modeSettings.element);
+        }
+
+        this.refreshModeSettings();
+
+        
+    }
+
+    setLanguageSettings(container) {
+        //if (!window.toSelected) return;
+        if (!this.langSettings) {
+            this.langSettings = new SettingsGroup(settingsSelectorTemplate);
+            container.appendChild(this.langSettings.element);
+        }
+
+        const lang = this.app.getLangById(window.toSelected);
+        this.langSettings.refresh(lang.options);
+    }
+
+    refreshModeSettings(){
+        if (!this.modeSettings) return;
+        const options = this.app.modes.getOptions(this.selectedMode);
+
+        this.modeSettings.refresh(options);
     }
 
     setGameModeSelector(container) {
@@ -168,6 +218,7 @@ export class SetupUIManager {
         this.emit(gmSelectedEvent, mode);
 
         this.refreshCategorySelector(this.categorySelector);
+        this.refreshModeSettings();
     }
 
     onCategorySelected(category) {
