@@ -1,4 +1,3 @@
-
 // Responsible for fetching JSON files
 // It caches results
 export class JSONLoader {
